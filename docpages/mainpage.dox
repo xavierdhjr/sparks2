@@ -1,0 +1,40 @@
+/*!
+	\mainpage Welcome
+
+	\section important Systems 
+	- Camera Movement
+	- [Crop Harvesting](@ref crop_harvesting)
+	- Grid Highlighting
+	- Grid Object Management
+	- Grid Placement
+	- Grid Selection
+	- GUI Interaction
+	- Input Context
+	- Pooling
+	- Purchasing
+	- Resources
+	- Unlockables
+	- User Context
+	
+	
+	
+	\section about About These Docs
+	
+	These docs were made with Doxygen, free documentation software.
+	
+	### Goal of these Docs ###
+	
+	This project is intended to be developed over an extended period of time. With people coming
+	and going, it's very important to document aspects of this project's development.
+	
+	### Editing the Docs ###
+
+	To edit the documentation, you will need to 
+	[download and install Doxygen](http://www.stack.nl/~dimitri/doxygen/download.html#srcbin) 
+	, fork the GitHub repository, and submit a pull request. 
+	
+	> https://github.com/xavierdhjr/sparks2.git
+	
+	For more details see [Updating These Docs](@ref updating). 
+
+*/
