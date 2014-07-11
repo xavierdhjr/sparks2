@@ -89,24 +89,55 @@
 	
 	3. Go to the 
 	[GitHub repo's Pull Requests page](https://github.com/xavierdhjr/sparks2/pulls)
-	and create a new pull request.
+	and create a new pull request. If you've already made one and
+	it's still open, your future commits will automatically be reflected
+	in the open pull request.
 	
 	4. Select your forked version of the repo as the `head fork` and
-	choose `master` as the branch to compare for *both* repositories.
-	
-	Note
-	> Make sure the master repository (xavierdhjr:master) is on the left
-	> and the forked repository (yourusername:master) is on the right
+	choose `master` as the branch to compare for *both* repositories.	
+	\htmlonly
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h3 class="panel-title">Note</h3>
+		</div>
+		<div class="panel-body">
+			You may need to click 
+			<code>compare across forks</code>
+			to show your forked	repository as 
+			something to compare against.
+		</div>
+	</div>
+	\endhtmlonly
+	\htmlonly
+	<div class="panel panel-warning">
+		<div class="panel-heading">
+			<h3 class="panel-title">Important</h3>
+		</div>
+		<div class="panel-body">
+			Make sure the master repository (xavierdhjr:master) is on the left
+			and the forked repository (yourusername:master) is on the right
+		</div>
+	</div>
+	\endhtmlonly
 	
 	5. Hit `Create pull request`
 	
 	An email will be sent out to the owner of the master repository, who
 	will then review your changes and either approve or reject them.
 	
-	Note
-	> A pull request indicates that you'd like the master repository to
-	> pull in changes that you've made. This helps prevent mistakes from
-	> getting into the Live version of the website because GitHub allows
-	> you to review the changes made in the pull request.
+	\htmlonly
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h3 class="panel-title">What is a Pull Request?</h3>
+		</div>
+		<div class="panel-body">
+		A pull request indicates that you'd like the master repository to
+		pull in changes that you've made. This helps prevent mistakes from
+		getting into the Live version of the website because GitHub allows
+		you to review the changes made in the pull request.
+		</div>
+	</div>
+	\endhtmlonly
+
 	
 */
