@@ -82,15 +82,105 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Updating These Docs </div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="toc"><h3>Table of Contents</h3>
+<ul><li class="level1"><a href="#initial_setup">Initial Setup</a></li>
+<li class="level1"><a href="#windows_setup">Setup Doxygen on Windows</a></li>
+<li class="level1"><a href="#unit_setup">Setup Doxygen on Unix</a></li>
+<li class="level1"><a href="#submission">Submitting Your Changes</a></li>
+</ul>
+</div>
 <div class="textblock"><p>Step by step instructions on how to update these docs while maintaining its appearence and integrity.</p>
-<h2>Windows </h2>
+<h1><a class="anchor" id="initial_setup"></a>
+Initial Setup</h1>
+<p>You only have to do these things once per machine you are using.</p>
+<ol type="1">
+<li>Download and install <a href="http://www.stack.nl/~dimitri/doxygen/download.html#srcbin">Doxygen</a></li>
+<li>Download and install <a href="http://git-scm.com/downloads">GIT</a></li>
+<li>Fork the GIT repository on GitHub <blockquote class="doxtable">
+<p><a href="https://github.com/xavierdhjr/sparks2.git">https://github.com/xavierdhjr/sparks2.git</a> </p>
+</blockquote>
+</li>
+<li>Make the directory <code>docs/html</code>, then Clone the repository into that folder. Note the period on the end. <pre>
+cd docs
+mkdir html
+cd html
+git clone <a href="https://github.com/yourusername/sparks2.git">https://github.com/yourusername/sparks2.git</a> .
+</pre></li>
+<li>Checkout the <code>gh-pages</code> branch. <pre>
+git checkout gh-pages
+</pre></li>
+</ol>
+<p>Doing this will allow you to build the site using Doxygen config settings in the <code>master</code> branch while being able to push the changes to the <code>gh-pages</code> branch. </p><hr/>
+<h1><a class="anchor" id="windows_setup"></a>
+Setup Doxygen on Windows</h1>
+<ol type="1">
+<li>Doxygen comes with an installer for Windows. Download and install that from the <a href="http://www.stack.nl/~dimitri/doxygen/download.html#srcbin">Doxygen sources and binaries</a> section.</li>
+<li>Open up <code>doxy_config</code> in your repo's root and go to line 768. Change that directory to the Scripts directory of your copy of the Sparks2 project.</li>
+<li>Open up Doxywizard</li>
+<li>Choose <code>File &gt; Open...</code> and navigate to the repository root where you'll find the <code>doxy_config</code> file.</li>
+<li>Change the working directory (At the top) to point to your repo's root directory.</li>
+<li>To compile Doxygen into the website, hit <b>Run</b> doxygen on the Run tab.</li>
+</ol>
+<p>See <a href="http://www.stack.nl/~dimitri/doxygen/manual/markdown.html">Doxygen's Markdown support page</a> for details on how to format your documentation.</p>
+<p>Open one of the files in <code>docpages</code> to see how custom pages can be added to Doxygen. </p><hr/>
+<h1><a class="anchor" id="unit_setup"></a>
+Setup Doxygen on Unix</h1>
 <p>Todo</p>
-<h2>Mac / Unix </h2>
-<p>Todo </p>
+<hr/>
+<h1><a class="anchor" id="submission"></a>
+Submitting Your Changes</h1>
+<p>If you've made changes to the documentation, you can update the <a href="http://xavierdhjr.github.io/sparks2">live site</a> by following these steps.</p>
+<ol type="1">
+<li>Make sure you've forked the repository on GitHub.</li>
+<li>Commit and push your changes to your repo on GitHub. <pre>
+git add .
+git commit -m "My commit message"
+git push origin master
+</pre></li>
+<li>Go to the <a href="https://github.com/xavierdhjr/sparks2/pulls">GitHub repo's Pull Requests page</a> and create a new pull request. If you've already made one and it's still open, your future commits will automatically be reflected in the open pull request.</li>
+<li>Select your forked version of the repo as the <code>head fork</code> and choose <code>master</code> as the branch to compare for <em>both</em> repositories.  
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title">Note</h3>
+    </div>
+    <div class="panel-body">
+        You may need to click 
+        <code>compare across forks</code>
+        to show your forked repository as 
+        something to compare against.
+    </div>
+</div>
+  
+<div class="panel panel-warning">
+    <div class="panel-heading">
+        <h3 class="panel-title">Important</h3>
+    </div>
+    <div class="panel-body">
+        Make sure the master repository (xavierdhjr:master) is on the left
+        and the forked repository (yourusername:master) is on the right
+    </div>
+</div>
+</li>
+<li>Hit <code>Create pull request</code></li>
+</ol>
+<p>An email will be sent out to the owner of the master repository, who will then review your changes and either approve or reject them.</p>
+<p> 
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title">What is a Pull Request?</h3>
+    </div>
+    <div class="panel-body">
+    A pull request indicates that you'd like the master repository to
+    pull in changes that you've made. This helps prevent mistakes from
+    getting into the Live version of the website because GitHub allows
+    you to review the changes made in the pull request.
+    </div>
+</div>
+ </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 11 2014 12:40:06 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 11 2014 15:58:18 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
