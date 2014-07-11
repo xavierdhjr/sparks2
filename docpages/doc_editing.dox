@@ -81,13 +81,22 @@
 	1. Make sure you've forked the repository on GitHub.
 	
 	2. Commit and push your changes to your repo on GitHub.
+	<pre>
+	git add .
+	git commit -m "My commit message"
+	git push origin master
+	</pre>
 	
 	3. Go to the 
 	[GitHub repo's Pull Requests page](https://github.com/xavierdhjr/sparks2/pulls)
 	and create a new pull request.
 	
 	4. Select your forked version of the repo as the `head fork` and
-	choose `gh-pages` as the branch to compare for *both* repositories.
+	choose `master` as the branch to compare for *both* repositories.
+	
+	Note
+	> Make sure the master repository (xavierdhjr:master) is on the left
+	> and the forked repository (yourusername:master) is on the right
 	
 	5. Hit `Create pull request`
 	
