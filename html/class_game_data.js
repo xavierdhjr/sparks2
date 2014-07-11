@@ -1,0 +1,26 @@
+var class_game_data =
+[
+    [ "GetAreaInfo", "class_game_data.html#af33a84f630f557498dc8e16a458657b2", null ],
+    [ "GetCropHarvestInfo", "class_game_data.html#a1846d1bc1658830a2f0040e7cfa24688", null ],
+    [ "GetItemInfo", "class_game_data.html#a159afbd918defc21094b13fad760578a", null ],
+    [ "GetObjectInfo", "class_game_data.html#aea5790745fb78a2a9b54811c1f98284e", null ],
+    [ "GetResourceInfo", "class_game_data.html#ae4902886f28e8a6a0ce0e6aa0223798f", null ],
+    [ "GetUnlockable", "class_game_data.html#a4da2f89dd673ea47d5c063480725684c", null ],
+    [ "AreaData", "class_game_data.html#a12102c8363a04dee3b78b627d351cca5", null ],
+    [ "CONST_HARVEST_MAINTENENCE_TIME", "class_game_data.html#aefde600a3f1eed41db230671d7d94dd4", null ],
+    [ "CONST_MAX_PLAYER_LEVEL", "class_game_data.html#afe890390f5966868aefb7044fa45b595", null ],
+    [ "Constants", "class_game_data.html#a803e3698a47d1e6ca18986dce7845359", null ],
+    [ "CropHarvestData", "class_game_data.html#a06d374e2413cd6d74d5ff00a6f07dabd", null ],
+    [ "FarmItemData", "class_game_data.html#ad4c1c0c98ffdb5a01588b3dd207e4428", null ],
+    [ "GameResources", "class_game_data.html#a7911c4eadacc300191c2a2f87f688a63", null ],
+    [ "GridObjectData", "class_game_data.html#af02f966a475ec455c420f2a5d98fe3f5", null ],
+    [ "HarvestMaintenenceTime", "class_game_data.html#a799bd659bf561ab7c664df160ad37cf8", null ],
+    [ "ITEM_ID", "class_game_data.html#a4e1ac38e08b9cf1a48b9ea74e5e8aef6", null ],
+    [ "LanguageSettings", "class_game_data.html#a210257e35942c170e69309cf36bb8b29", null ],
+    [ "MaxPlayerLevel", "class_game_data.html#a1d663756b1456661167cfc035b77e2e0", null ],
+    [ "RELATIVE_PATH_TO_SQLITEDATA", "class_game_data.html#adb22b3324d1798f828c6361827a4035d", null ],
+    [ "RELATIVE_PATH_TO_XMLDATA", "class_game_data.html#ae6fc11a69bd4eb3406243e97a4b9ab65", null ],
+    [ "SourceType", "class_game_data.html#ae82a609c5b0ee8da6ca73f8a96db7b76", null ],
+    [ "Store", "class_game_data.html#a881ecdefad68403cd152a00f26cd34f4", null ],
+    [ "Unlockables", "class_game_data.html#a7424ef963477389f9661046073f46cc6", null ]
+];

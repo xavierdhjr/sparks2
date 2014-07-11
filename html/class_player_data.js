@@ -1,0 +1,25 @@
+var class_player_data =
+[
+    [ "CalculateLevel", "class_player_data.html#ae74b013014ad13cfe1e734010b3d809a", null ],
+    [ "GainExperience", "class_player_data.html#ae9f5320c62004602c76393bb72b33db9", null ],
+    [ "GetCurrency", "class_player_data.html#a0036cff3bebb26744dfbee699e17743d", null ],
+    [ "GetExperienceForLevel", "class_player_data.html#afe4f6f208ff49d12ccdb407d24f902b4", null ],
+    [ "GetExperienceForNextLevel", "class_player_data.html#a4efe4f2cd5ac05ad1974ece90f4b52f2", null ],
+    [ "GetExpProgressForCurrentLevel", "class_player_data.html#a1b7310844e7ee19a34f24f7659243c3e", null ],
+    [ "GetItems", "class_player_data.html#a1582ef0ef08f0efc4085ae3b02683f44", null ],
+    [ "GetResource", "class_player_data.html#a77818ccdc7f675a1b59c84e2b614a066", null ],
+    [ "HasItem", "class_player_data.html#a28884e491b3fe00974564ff2f7917151", null ],
+    [ "HasUnlocked", "class_player_data.html#a17ed6b9f509b00f13a7c7ab25c784eba", null ],
+    [ "ReceiveItem", "class_player_data.html#a7226f269dab658bf09671d334258a962", null ],
+    [ "RemoveItem", "class_player_data.html#a3b43c8b5a3e395880d52e8da3af2cac4", null ],
+    [ "UnlockUnlockable", "class_player_data.html#a15b40f88c94c5f9403077378d5fe7575", null ],
+    [ "Experience", "class_player_data.html#aefa2eaa228f54fb7a9bb798573833467", null ],
+    [ "Inventory", "class_player_data.html#abf54aeb5fad171a44fbc4be29a7ce6c4", null ],
+    [ "PlayerId", "class_player_data.html#ae3aa2f96fac009f9354ed8d084a9f1b3", null ],
+    [ "PlayerName", "class_player_data.html#a85d0de444691a3e0339002e212d7ca82", null ],
+    [ "PlayerResources", "class_player_data.html#aa2542f1c9077dbb86d970266e8aac256", null ],
+    [ "RESOURCE_CURRENCY", "class_player_data.html#ae507b7eea681da7f515a4a785093be2a", null ],
+    [ "RESOURCE_ENERGY", "class_player_data.html#ab855c1eb2a54d5540b628d0f670cb96e", null ],
+    [ "Unlocks", "class_player_data.html#a4cfd5b76fc6c31d1ff00f90a0f227317", null ],
+    [ "Level", "class_player_data.html#a4df77e152ee8ffce54d9dd784c597de3", null ]
+];
