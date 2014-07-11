@@ -4,11 +4,140 @@
 	Step by step instructions on how to update these docs while 
 	maintaining its appearence and integrity.
 	
-	Windows
-	---------
+	\tableofcontents
+	
+	\section initial_setup Initial Setup
+	
+	You only have to do these things once per machine you are using.
+	
+	1. Download and install [Doxygen](http://www.stack.nl/~dimitri/doxygen/download.html#srcbin) 
+
+	2. Download and install [GIT](http://git-scm.com/downloads)
+	
+	3. Fork the GIT repository on GitHub
+	> https://github.com/xavierdhjr/sparks2.git
+	
+	4. Make the directory `docs/html`, then Clone 
+	the repository into that folder. Note the period on the end.
+	<pre>
+	cd docs
+	mkdir html
+	cd html
+	git clone https://github.com/yourusername/sparks2.git .
+	</pre>
+	
+	5. Checkout the `gh-pages` branch.
+	<pre>
+	git checkout gh-pages
+	</pre>
+	
+	Doing this will allow you to build the site using 
+	Doxygen config settings in the `master` branch while 
+	being able to push the changes to the `gh-pages` branch.
+	_____
+	
+	\section windows_setup Setup Doxygen on Windows
+
+	1. Doxygen comes with an installer for Windows. 
+	Download and install that from the
+	[Doxygen sources and binaries](http://www.stack.nl/~dimitri/doxygen/download.html#srcbin) 
+	section.
+	
+	2. Open up `doxy_config` in your repo's root and go to
+	line 768. Change that directory to the Scripts 
+	directory of your copy of the Sparks2 project.
+	
+	3. Open up Doxywizard
+	
+	4. Choose `File > Open...` and navigate to the repository root 
+	where you'll find the `doxy_config` file.
+	
+	5. Change the working directory (At the top) to point 
+	to your repo's root directory.
+	
+	6. To compile Doxygen into the website, hit 
+	\b Run doxygen
+	on the Run tab.
+	
+	See [Doxygen's Markdown support page](http://www.stack.nl/~dimitri/doxygen/manual/markdown.html)
+	for details on how to format your documentation.
+	
+	Open one of the files in `docpages` to see how custom
+	pages can be added to Doxygen.
+	_______
+	
+	\section unit_setup Setup Doxygen on Unix
 	Todo
 	
-	Mac / Unix
-	---------
-	Todo
+	______
+	
+	\section submission Submitting Your Changes
+	
+	If you've made changes to the documentation, you can
+	update the 
+	[live site](http://xavierdhjr.github.io/sparks2)
+	by following these steps.
+	
+	1. Make sure you've forked the repository on GitHub.
+	
+	2. Commit and push your changes to your repo on GitHub.
+	<pre>
+	git add .
+	git commit -m "My commit message"
+	git push origin master
+	</pre>
+	
+	3. Go to the 
+	[GitHub repo's Pull Requests page](https://github.com/xavierdhjr/sparks2/pulls)
+	and create a new pull request. If you've already made one and
+	it's still open, your future commits will automatically be reflected
+	in the open pull request.
+	
+	4. Select your forked version of the repo as the `head fork` and
+	choose `master` as the branch to compare for *both* repositories.	
+	\htmlonly
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h3 class="panel-title">Note</h3>
+		</div>
+		<div class="panel-body">
+			You may need to click 
+			<code>compare across forks</code>
+			to show your forked	repository as 
+			something to compare against.
+		</div>
+	</div>
+	\endhtmlonly
+	\htmlonly
+	<div class="panel panel-warning">
+		<div class="panel-heading">
+			<h3 class="panel-title">Important</h3>
+		</div>
+		<div class="panel-body">
+			Make sure the master repository (xavierdhjr:master) is on the left
+			and the forked repository (yourusername:master) is on the right
+		</div>
+	</div>
+	\endhtmlonly
+	
+	5. Hit `Create pull request`
+	
+	An email will be sent out to the owner of the master repository, who
+	will then review your changes and either approve or reject them.
+	
+	\htmlonly
+	<div class="panel panel-info">
+		<div class="panel-heading">
+			<h3 class="panel-title">What is a Pull Request?</h3>
+		</div>
+		<div class="panel-body">
+		A pull request indicates that you'd like the master repository to
+		pull in changes that you've made. This helps prevent mistakes from
+		getting into the Live version of the website because GitHub allows
+		you to review the changes made in the pull request.
+		</div>
+	</div>
+	\endhtmlonly
+
+	
 */
