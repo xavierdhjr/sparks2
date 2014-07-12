@@ -1,10 +1,12 @@
 /*!
 	\mainpage Welcome
 
+	\tableofcontents
+	
 	\section important Systems 
 	- Camera Movement
 	- [Crop Harvesting](@ref crop_harvesting)
-	- Grid Highlighting
+	- [Grid Highlighting](@ref grid_highlighting)
 	- Grid Object Management
 	- Grid Placement
 	- Grid Selection
@@ -16,18 +18,16 @@
 	- Unlockables
 	- User Context
 	
-	
-	
 	\section about About These Docs
 	
 	These docs were made with Doxygen, free documentation software.
 	
-	### Goal of these Docs ###
+	\subsection goal Goal of these Docs
 	
 	This project is intended to be developed over an extended period of time. With people coming
 	and going, it's very important to document aspects of this project's development.
 	
-	### Editing the Docs ###
+	\subsection editing Editing the Docs
 
 	To edit the documentation, you will need to 
 	[download and install Doxygen](http://www.stack.nl/~dimitri/doxygen/download.html#srcbin) 

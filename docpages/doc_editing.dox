@@ -97,9 +97,6 @@
 	choose `master` as the branch to compare for *both* repositories.	
 	\htmlonly
 	<div class="panel panel-info">
-		<div class="panel-heading">
-			<h3 class="panel-title">Note</h3>
-		</div>
 		<div class="panel-body">
 			You may need to click 
 			<code>compare across forks</code>
@@ -110,9 +107,6 @@
 	\endhtmlonly
 	\htmlonly
 	<div class="panel panel-warning">
-		<div class="panel-heading">
-			<h3 class="panel-title">Important</h3>
-		</div>
 		<div class="panel-body">
 			Make sure the master repository (xavierdhjr:master) is on the left
 			and the forked repository (yourusername:master) is on the right

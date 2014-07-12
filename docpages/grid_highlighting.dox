@@ -1,0 +1,45 @@
+/*!
+	\page grid_highlighting System: Grid Highlighting
+		
+	\well{
+	See GridHighlightSystem for more details on methods and public fields.
+	}
+	
+	\tableofcontents
+	
+	\section highlight_summary Summary
+	
+	This system manages the creation, hiding, and showing of
+	highlights for GridObjects. Highlights are outlines that 
+	show the area a GridObject occupies on the ground, and 
+	can be colored depending on the situation.
+	
+	\section highlight_goals Goals
+	
+	- Show the area a GridObject occupies.
+	- Show the area in different ways depending on what
+	other objects occupy the area or what the GridObject
+	is currently doing.
+	- Be able to control the highlight of possibly many
+	GridObjects.
+	
+	\section highlight_data Data Format
+	
+	How to enable highlighting on a GridObject
+	
+	You need to add the `<capability>highlightable</capability>` tag
+	to a GridObject's data to enable highlighting.
+	
+	\snippet examples/example_cropharvest_data.xml GridObject Example
+	
+	\section highlight_howto How To Use
+
+	Highlighting is done by setting HighlightState information and 
+	then applying that state to a given GridObject.
+	
+	It's possible to set information once and not change it, or to set
+	and clear it every frame.
+	
+	\snippet examples/GridHighlightExample.cs Highlighting
+	
+*/
