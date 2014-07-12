@@ -1,21 +1,27 @@
 /*!
 	\page crop_harvesting System: Crop Harvesting
-
+	
+	\htmlonly
+	<div class="well">
+	See CropHarvestSystem for more details on methods and public fields.
+	</div>
+	\endhtmlonly
+	
 	\tableofcontents
 	
-	\section summary Summary
+	\section cropharvest_summary Summary
 	
 	This system manages the stages a crop goes through and the
 	rewards of harvesting a crop.
-	
-	\section goals Goals
+
+	\section cropharvest_goals Goals
 	
 	- Manage the stages of growth of a GridObject that is marked with
 	the [Capability] `CropHarvestable`.
 	- Give rewards (EXP, items) for harvesting crops.
 	- Consume resources demanded by a harvest (Energy).
 	
-	\section data Data Format
+	\section cropharvest_data Data Format
 	
 	How to create a CropHarvest in XML
 	
@@ -30,7 +36,7 @@
 	produced item and defines EXP rewards, Energy requirements, 
 	and Time requirements.
 	
-	\section howto How To Use
+	\section cropharvest_howto How To Use
 	
 	\subsection harvestable Determining if a GridObject can be Harvested
 	
@@ -52,8 +58,6 @@
 	This example puts it all together and tries to harvest a referenced
 	GridObject whenever the mouse is clicked.
 	
-	Note that you need to `Register` a GridObject with the CropHarvestSystem
-	before it can record any [State] information.
 	\include examples/CropHarvestExample.cs
 	
 	[State]: @ref CropHarvestSystem.CropHarvestState "CropHarvestState"
