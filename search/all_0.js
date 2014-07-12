@@ -1,7 +1,6 @@
 var searchData=
 [
   ['actioniconpool',['ActionIconPool',['../class_action_icon_pool.html',1,'']]],
-  ['actioniconsettings',['ActionIconSettings',['../class_action_icon_settings.html',1,'']]],
   ['actionsystem',['ActionSystem',['../class_action_system.html',1,'']]],
   ['animalharvestable',['AnimalHarvestable',['../class_grid_object.html#a40b3afd347b296b2b6076092bb56fe54a1dc0678027835d5451f6626d673c7fce',1,'GridObject']]],
   ['attachtoworldobject',['AttachToWorldObject',['../class_attach_to_world_object.html',1,'']]],

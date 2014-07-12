@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
@@ -102,6 +103,7 @@ Inheritance diagram for GridObjectSystem:</div>
  <div class="center">
   <img src="class_grid_object_system.png" usemap="#GridObjectSystem_map" alt=""/>
   <map id="GridObjectSystem_map" name="GridObjectSystem_map">
+<area href="interface_i_registrar.html" title="Symbolizes an entity that should be the entry point for objects that need to be registered with possi..." alt="IRegistrar" shape="rect" coords="123,0,236,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -109,6 +111,42 @@ Inheritance diagram for GridObjectSystem:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_object_system_1_1_grid_object_space_mask.html">GridObjectSpaceMask</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a16776a6cfe550a3d0e26d69fb0286499"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16776a6cfe550a3d0e26d69fb0286499"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateObjectCapabilities</b> (<a class="el" href="class_grid_object.html">GridObject</a> obj)</td></tr>
+<tr class="separator:a16776a6cfe550a3d0e26d69fb0286499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6a5fc334b6917b25cbea5c24413587c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6a5fc334b6917b25cbea5c24413587c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterGridObject</b> (<a class="el" href="class_grid_object.html">GridObject</a> obj)</td></tr>
+<tr class="separator:af6a5fc334b6917b25cbea5c24413587c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f13e33ae19b33456eb3e4960f03ce7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f13e33ae19b33456eb3e4960f03ce7b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterGridObject</b> (<a class="el" href="class_grid_object.html">GridObject</a> obj)</td></tr>
+<tr class="separator:a9f13e33ae19b33456eb3e4960f03ce7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa818601a915c1e00a23e198d3132e699"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa818601a915c1e00a23e198d3132e699"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetHeightAtPosition</b> (Vector3 position)</td></tr>
+<tr class="separator:aa818601a915c1e00a23e198d3132e699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29efdb0c2c6fb1957bc7e966790169b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29efdb0c2c6fb1957bc7e966790169b8"></a>
+Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>GetGridSnapPosition</b> (<a class="el" href="class_grid_object.html">GridObject</a> obj)</td></tr>
+<tr class="separator:a29efdb0c2c6fb1957bc7e966790169b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3087855953bd6cc83b24adbdd59c6852"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3087855953bd6cc83b24adbdd59c6852"></a>
+Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>ToGridPoint</b> (Vector3 point)</td></tr>
+<tr class="separator:a3087855953bd6cc83b24adbdd59c6852"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2378f022ce15b4ce491de5eea7b3d457"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2378f022ce15b4ce491de5eea7b3d457"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInBuildableArea</b> (Rect area)</td></tr>
+<tr class="separator:a2378f022ce15b4ce491de5eea7b3d457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b530c4da5f018ec097b49de00c5857"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24b530c4da5f018ec097b49de00c5857"></a>
+<a class="el" href="class_buildable_land.html">BuildableLand</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetBuildableAreaFor</b> (Rect area)</td></tr>
+<tr class="separator:a24b530c4da5f018ec097b49de00c5857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa608a791b7db44c92f2b8a382b7bb83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa608a791b7db44c92f2b8a382b7bb83"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DisplayAllBuildableLand</b> ()</td></tr>
+<tr class="separator:afa608a791b7db44c92f2b8a382b7bb83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3ec13d19952cb59e600cc8c80de474"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c3ec13d19952cb59e600cc8c80de474"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>HideAllGridDisplays</b> ()</td></tr>
+<tr class="separator:a5c3ec13d19952cb59e600cc8c80de474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0912cd9a8fbf0986c74f02da445fc135"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0912cd9a8fbf0986c74f02da445fc135"></a>
+List&lt; <a class="el" href="class_grid_object.html">GridObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGridObjectsInArea</b> (Rect area)</td></tr>
+<tr class="separator:a0912cd9a8fbf0986c74f02da445fc135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -121,12 +159,31 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a66acee58c7f5fdc58ed6b1703611fcc2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66acee58c7f5fdc58ed6b1703611fcc2"></a>
 List&lt; <a class="el" href="class_grid_object_system_1_1_grid_object_space_mask.html">GridObjectSpaceMask</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>SpaceMasks</b> = new List&lt;<a class="el" href="class_grid_object_system_1_1_grid_object_space_mask.html">GridObjectSpaceMask</a>&gt;()</td></tr>
 <tr class="separator:a66acee58c7f5fdc58ed6b1703611fcc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18c18a625d835ff07ba1aaef688c3bec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18c18a625d835ff07ba1aaef688c3bec"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>PlotWidth</b></td></tr>
+<tr class="separator:a18c18a625d835ff07ba1aaef688c3bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1967eeee23356dfc3b7d55895b282777"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1967eeee23356dfc3b7d55895b282777"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>PlotHeight</b></td></tr>
+<tr class="separator:a1967eeee23356dfc3b7d55895b282777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a43a52a741640832f3dde5ea1591ba5ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43a52a741640832f3dde5ea1591ba5ce"></a>
 static <a class="el" href="class_grid_object_system.html">GridObjectSystem</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Get</b><code> [get]</code></td></tr>
 <tr class="separator:a43a52a741640832f3dde5ea1591ba5ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f2a9f1c41b086a0e5060e7efc08e678"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f2a9f1c41b086a0e5060e7efc08e678"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>PlotsCreated</b><code> [get]</code></td></tr>
+<tr class="separator:a0f2a9f1c41b086a0e5060e7efc08e678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908ee0fbc94ec5646bd815f4fbf3bf61"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a908ee0fbc94ec5646bd815f4fbf3bf61"></a>
+<a class="el" href="class_grid_object.html">GridObject</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ToRegister</b><code> [get, set]</code></td></tr>
+<tr class="separator:a908ee0fbc94ec5646bd815f4fbf3bf61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac26a85f25b0fdbdf068df3b50faa5697"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac26a85f25b0fdbdf068df3b50faa5697"></a>
+List&lt; <a class="el" href="class_grid_object.html">GridObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Objects</b><code> [get]</code></td></tr>
+<tr class="separator:ac26a85f25b0fdbdf068df3b50faa5697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_interface_i_registrar"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_i_registrar')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interface_i_registrar.html">IRegistrar</a></td></tr>
+<tr class="memitem:a8aceab56e67b137f489af2266f16b283 inherit properties_interface_i_registrar"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8aceab56e67b137f489af2266f16b283"></a>
+<a class="el" href="class_grid_object.html">GridObject</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ToRegister</b><code> [get]</code></td></tr>
+<tr class="separator:a8aceab56e67b137f489af2266f16b283 inherit properties_interface_i_registrar"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/Raider/Documents/Sparks2/Assets/Scripts/Systems/GridObjectSystem.cs</li>
@@ -134,7 +191,7 @@ static <a class="el" href="class_grid_object_system.html">GridObjectSystem</a>&#
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 11 2014 15:58:19 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 12 2014 15:00:22 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

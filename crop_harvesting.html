@@ -83,27 +83,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="toc"><h3>Table of Contents</h3>
-<ul><li class="level1"><a href="#summary">Summary</a></li>
-<li class="level1"><a href="#goals">Goals</a></li>
-<li class="level1"><a href="#data">Data Format</a></li>
-<li class="level1"><a href="#howto">How To Use</a><ul><li class="level2"><a href="#harvestable">Determining if a GridObject can be Harvested</a></li>
+<ul><li class="level1"><a href="#cropharvest_summary">Summary</a></li>
+<li class="level1"><a href="#cropharvest_goals">Goals</a></li>
+<li class="level1"><a href="#cropharvest_data">Data Format</a></li>
+<li class="level1"><a href="#cropharvest_howto">How To Use</a><ul><li class="level2"><a href="#harvestable">Determining if a GridObject can be Harvested</a></li>
 <li class="level2"><a href="#harvestState">Determining the state of a Crop Harvest</a></li>
 <li class="level2"><a href="#harvesting">Harvesting A Crop</a></li>
 </ul>
 </li>
 </ul>
 </div>
-<div class="textblock"><h1><a class="anchor" id="summary"></a>
+<div class="textblock"><p> 
+<div class="well">
+See CropHarvestSystem for more details on methods and public fields.
+</div>
+</p>
+<h1><a class="anchor" id="cropharvest_summary"></a>
 Summary</h1>
 <p>This system manages the stages a crop goes through and the rewards of harvesting a crop.</p>
-<h1><a class="anchor" id="goals"></a>
+<h1><a class="anchor" id="cropharvest_goals"></a>
 Goals</h1>
 <ul>
 <li>Manage the stages of growth of a <a class="el" href="class_grid_object.html">GridObject</a> that is marked with the <a class="el" href="class_grid_object.html#a40b3afd347b296b2b6076092bb56fe54">Capability</a> <code>CropHarvestable</code>.</li>
 <li>Give rewards (EXP, items) for harvesting crops.</li>
 <li>Consume resources demanded by a harvest (Energy).</li>
 </ul>
-<h1><a class="anchor" id="data"></a>
+<h1><a class="anchor" id="cropharvest_data"></a>
 Data Format</h1>
 <p>How to create a CropHarvest in XML</p>
 <div class="fragment"><div class="line">    &lt;!-- Harvestable Item --&gt;</div>
@@ -120,6 +125,7 @@ Data Format</h1>
 <div class="line">    &lt;/farmitem&gt;</div>
 <div class="line">  </div>
 <div class="line">    &lt;!-- Harvestable <a class="code" href="class_grid_object.html">GridObject</a> --&gt;</div>
+<div class="line">  &lt;!-- [<a class="code" href="class_grid_object.html">GridObject</a> Example] --&gt;</div>
 <div class="line">    &lt;gridobject item-<span class="keywordtype">id</span>=<span class="stringliteral">&quot;farm_item_1a&quot;</span> width=<span class="stringliteral">&quot;10&quot;</span> height=<span class="stringliteral">&quot;10&quot;</span>&gt;</div>
 <div class="line">        &lt;art-asset&gt;GridObjects/farm_item_1a&lt;/art-asset&gt;</div>
 <div class="line">        &lt;art-asset&gt;GridObjects/farm_item_1b&lt;/art-asset&gt;</div>
@@ -129,6 +135,7 @@ Data Format</h1>
 <div class="line">        &lt;capability&gt;cropHarvestable&lt;/capability&gt;</div>
 <div class="line">        &lt;layer&gt;plots&lt;/layer&gt;</div>
 <div class="line">    &lt;/gridobject&gt;</div>
+<div class="line">  &lt;!-- [<a class="code" href="class_grid_object.html">GridObject</a> Example] --&gt;</div>
 <div class="line"></div>
 <div class="line">    &lt;!-- Harvest Info --&gt;</div>
 <div class="line">    &lt;cropharvest item-<span class="keywordtype">id</span>=<span class="stringliteral">&quot;farm_item_1a&quot;</span> energy=<span class="stringliteral">&quot;1&quot;</span> time=<span class="stringliteral">&quot;5&quot;</span> mexp=<span class="stringliteral">&quot;1&quot;</span>&gt;</div>
@@ -144,14 +151,16 @@ Data Format</h1>
 </li>
 <li>A Harvest Info section that hooks together the <a class="el" href="class_grid_object.html">GridObject</a> and the produced item and defines EXP rewards, Energy requirements, and Time requirements.</li>
 </ul>
-<h1><a class="anchor" id="howto"></a>
+<h1><a class="anchor" id="cropharvest_howto"></a>
 How To Use</h1>
 <h2><a class="anchor" id="harvestable"></a>
 Determining if a GridObject can be Harvested</h2>
 <p>A <a class="el" href="class_grid_object.html">GridObject</a> can be harvested if it is marked with the <a class="el" href="class_grid_object.html#a40b3afd347b296b2b6076092bb56fe54">Capability</a> <code>CropHarvestable</code>.</p>
-<div class="fragment"><div class="line">        <span class="comment">// This will return false if the GridObject does not have</span></div>
-<div class="line">        <span class="comment">// the right Capability or if it is not &quot;Ready&quot;.</span></div>
-<div class="line">        <span class="keywordtype">bool</span> canBeHarvested = CropHarvestSystem.Get.CanBeHarvested(Obj);</div>
+<div class="fragment"><div class="line">        <span class="keywordtype">bool</span> canBeHarvested = CropHarvestSystem.Get.CanBeHarvested(Obj);</div>
+<div class="line">        <span class="keywordflow">if</span> (!canBeHarvested)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">return</span>;</div>
+<div class="line">        }</div>
 </div><!-- fragment --><hr/>
 <h2><a class="anchor" id="harvestState"></a>
 Determining the state of a Crop Harvest</h2>
@@ -189,29 +198,20 @@ Harvesting A Crop</h2>
 <div class="line">        }</div>
 </div><!-- fragment --><hr/>
 <p>This example puts it all together and tries to harvest a referenced <a class="el" href="class_grid_object.html">GridObject</a> whenever the mouse is clicked.</p>
-<p>Note that you need to <code>Register</code> a <a class="el" href="class_grid_object.html">GridObject</a> with the <a class="el" href="class_crop_harvest_system.html">CropHarvestSystem</a> before it can record any <a class="el" href="class_crop_harvest_system_1_1_crop_harvest_state.html">CropHarvestState</a> information. </p><div class="fragment"><div class="line"><span class="keyword">using</span> UnityEngine;</div>
+<div class="fragment"><div class="line"><span class="keyword">using</span> UnityEngine;</div>
 <div class="line"><span class="keyword">using</span> System.Collections;</div>
 <div class="line"></div>
 <div class="line"><span class="keyword">public</span> <span class="keyword">class </span>CropHarvestExample : MonoBehaviour </div>
 <div class="line">{</div>
-<div class="line"></div>
 <div class="line">    <span class="keyword">public</span> <a class="code" href="class_grid_object.html">GridObject</a> Obj;</div>
-<div class="line"></div>
-<div class="line">    <span class="comment">// Use this for initialization</span></div>
-<div class="line">    <span class="keywordtype">void</span> Start ()</div>
-<div class="line">    {</div>
-<div class="line">        <span class="comment">// This will return false if the GridObject does not have</span></div>
-<div class="line">        <span class="comment">// the right Capability or if it is not &quot;Ready&quot;.</span></div>
-<div class="line">        <span class="keywordtype">bool</span> canBeHarvested = CropHarvestSystem.Get.CanBeHarvested(Obj);</div>
-<div class="line"></div>
-<div class="line">        <span class="comment">// This object must be registered with the CropHarvestSystem</span></div>
-<div class="line">        <span class="comment">// otherwise no state information will be recorded.</span></div>
-<div class="line">        <span class="keywordflow">if</span>(canBeHarvested)</div>
-<div class="line">            CropHarvestSystem.Get.RegisterHarvestableObject(Obj);</div>
-<div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <span class="keywordtype">void</span> Update()</div>
 <div class="line">    {</div>
+<div class="line">        <span class="keywordtype">bool</span> canBeHarvested = CropHarvestSystem.Get.CanBeHarvested(Obj);</div>
+<div class="line">        <span class="keywordflow">if</span> (!canBeHarvested)</div>
+<div class="line">        {</div>
+<div class="line">            <span class="keywordflow">return</span>;</div>
+<div class="line">        }</div>
 <div class="line">        <span class="keywordflow">if</span> (Input.GetMouseButtonDown(0))</div>
 <div class="line">            <a class="code" href="class_crop_harvest_system.html">CropHarvestSystem</a>.Get.Harvest(Obj);</div>
 <div class="line"></div>
@@ -233,7 +233,7 @@ Harvesting A Crop</h2>
 </div><!-- fragment --> </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 11 2014 15:58:18 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 12 2014 15:00:21 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
