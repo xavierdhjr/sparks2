@@ -1,11 +1,9 @@
 /*!
 	\page crop_harvesting System: Crop Harvesting
 	
-	\htmlonly
-	<div class="well">
+	\well{
 	See CropHarvestSystem for more details on methods and public fields.
-	</div>
-	\endhtmlonly
+	}
 	
 	\tableofcontents
 	
