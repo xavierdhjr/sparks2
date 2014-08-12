@@ -1,4 +1,28 @@
 var searchData=
 [
-  ['keyboardcontrollerinput',['KeyboardControllerInput',['../class_keyboard_controller_input.html',1,'']]]
+  ['iactioninterpreter',['IActionInterpreter',['../interface_i_action_interpreter.html',1,'']]],
+  ['ibuildtimerlistener',['IBuildTimerListener',['../interface_i_build_timer_listener.html',1,'']]],
+  ['icalendarlistener',['ICalendarListener',['../interface_i_calendar_listener.html',1,'']]],
+  ['idatasource_3c_20t_20_3e',['IDataSource&lt; T &gt;',['../interface_i_data_source_3_01_t_01_4.html',1,'']]],
+  ['ignorechildrenpivots',['IgnoreChildrenPivots',['../class_u_i_arranged_collection.html#a6d813819d76e95d9a419f830753fb0a2',1,'UIArrangedCollection']]],
+  ['ignoreparentpivots',['IgnoreParentPivots',['../class_u_i_arranged_collection.html#ac08d6831bda08d7dade260a345837b78',1,'UIArrangedCollection']]],
+  ['init',['Init',['../class_u_i_arranged_collection.html#a6cf9714bd2e926c8d5e510650010ead1',1,'UIArrangedCollection']]],
+  ['inputcontextsystem',['InputContextSystem',['../class_input_context_system.html',1,'']]],
+  ['inputgesture',['InputGesture',['../class_input_gesture.html',1,'']]],
+  ['inputgesturedoubleclick',['InputGestureDoubleClick',['../class_input_gesture_double_click.html',1,'']]],
+  ['inputgesturedrag',['InputGestureDrag',['../class_input_gesture_drag.html',1,'']]],
+  ['inputgesturehold',['InputGestureHold',['../class_input_gesture_hold.html',1,'']]],
+  ['inputsystem',['InputSystem',['../class_input_system.html',1,'']]],
+  ['instanceid',['InstanceId',['../class_cloneable_object.html#a9d1329edf2e178e70b35b41955a34103',1,'CloneableObject']]],
+  ['inventoryinfo',['InventoryInfo',['../class_inventory_info.html',1,'']]],
+  ['inventoryitem',['InventoryItem',['../class_inventory_item.html',1,'']]],
+  ['inventoryui',['InventoryUI',['../class_inventory_u_i.html',1,'']]],
+  ['ipadinput',['IPadInput',['../class_i_pad_input.html',1,'']]],
+  ['iregistrar',['IRegistrar',['../interface_i_registrar.html',1,'']]],
+  ['isaxismapped',['IsAxisMapped',['../class_platform_input.html#a6a6c5e5b430c3dee2b6428662b956344',1,'PlatformInput']]],
+  ['isbtnmapped',['IsBtnMapped',['../class_platform_input.html#abf048c39d9a834e20cb7352d0fd199f2',1,'PlatformInput']]],
+  ['isinbuildablearea',['IsInBuildableArea',['../class_grid_object_system.html#a2378f022ce15b4ce491de5eea7b3d457',1,'GridObjectSystem']]],
+  ['isleapyear',['IsLeapYear',['../class_hebrew_date_time_1_1_hebrew_date.html#aabdece19046bc2925693748c728376e2',1,'HebrewDateTime.HebrewDate.IsLeapYear()'],['../class_hebrew_date_time_1_1_hebrew_date.html#a836fb39d25e6ce420760800db379abd2',1,'HebrewDateTime.HebrewDate.IsLeapYear(int year)']]],
+  ['isoccuringtoday',['IsOccuringToday',['../class_conditional_event_info.html#a12a8c55a265e362e461d51522fae4c98',1,'ConditionalEventInfo']]],
+  ['iusercontextswitcher',['IUserContextSwitcher',['../interface_i_user_context_switcher.html',1,'']]]
 ];

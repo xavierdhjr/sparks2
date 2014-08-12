@@ -67,7 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -93,7 +93,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 </ul>
 </div>
-<div class="textblock"><div class="well"> See <a class="el" href="class_crop_harvest_system.html">CropHarvestSystem</a> for more details on methods and public fields. </div><h1><a class="anchor" id="cropharvest_summary"></a>
+<div class="textblock"><p>{ See <a class="el" href="class_crop_harvest_system.html">CropHarvestSystem</a> for more details on methods and public fields. }</p>
+<h1><a class="anchor" id="cropharvest_summary"></a>
 Summary</h1>
 <p>This system manages the stages a crop goes through and the rewards of harvesting a crop.</p>
 <h1><a class="anchor" id="cropharvest_goals"></a>
@@ -159,8 +160,13 @@ Determining if a GridObject can be Harvested</h2>
 </div><!-- fragment --><hr/>
 <h2><a class="anchor" id="harvestState"></a>
 Determining the state of a Crop Harvest</h2>
-<div class="fragment"><div class="line">        <a class="code" href="class_crop_harvest_system_1_1_crop_harvest_state.html">CropHarvestSystem.CropHarvestState</a> state = CropHarvestSystem.Get.GetHarvestStateFor(Obj);</div>
-<div class="line">        <span class="keywordflow">if</span> (state.CurrentStage == <a class="code" href="class_crop_harvest_system.html">CropHarvestSystem</a>.Stage.Growing)</div>
+<div class="fragment"><div class="line">        <a class="code" href="class_crop_harvest_system_1_1_crop_harvest_state.html">CropHarvestSystem.CropHarvestState</a> state = (<a class="code" href="class_crop_harvest_system_1_1_crop_harvest_state.html">CropHarvestSystem.CropHarvestState</a>)Obj.State;</div>
+<div class="line"></div>
+<div class="line">        if (state.BadData)</div>
+<div class="line">        {</div>
+<div class="line">            Debug.Log(<span class="stringliteral">&quot;State is invalid.&quot;</span>);</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (state.CurrentStage == <a class="code" href="class_crop_harvest_system.html">CropHarvestSystem</a>.Stage.Growing)</div>
 <div class="line">        {</div>
 <div class="line">            Debug.Log(<span class="stringliteral">&quot;Crop is growing. Time Left:&quot;</span> + state.GetTimeLeftString());</div>
 <div class="line">        }</div>
@@ -176,10 +182,15 @@ Determining the state of a Crop Harvest</h2>
 <h2><a class="anchor" id="harvesting"></a>
 Harvesting A Crop</h2>
 <div class="fragment"><div class="line">        <span class="keywordflow">if</span> (Input.GetMouseButtonDown(0))</div>
-<div class="line">            <a class="code" href="class_crop_harvest_system.html">CropHarvestSystem</a>.Get.Harvest(Obj);</div>
+<div class="line">            <a class="code" href="class_crop_harvest_system.html">CropHarvestSystem</a>.Get.<a class="code" href="class_crop_harvest_system.html#ac5e4c926d5840b52cbf367568ab6b2bf">Harvest</a>(Obj);</div>
 <div class="line"></div>
-<div class="line">        <a class="code" href="class_crop_harvest_system_1_1_crop_harvest_state.html">CropHarvestSystem.CropHarvestState</a> state = CropHarvestSystem.Get.GetHarvestStateFor(Obj);</div>
-<div class="line">        <span class="keywordflow">if</span> (state.CurrentStage == <a class="code" href="class_crop_harvest_system.html">CropHarvestSystem</a>.Stage.Growing)</div>
+<div class="line">        <a class="code" href="class_crop_harvest_system_1_1_crop_harvest_state.html">CropHarvestSystem.CropHarvestState</a> state = (<a class="code" href="class_crop_harvest_system_1_1_crop_harvest_state.html">CropHarvestSystem.CropHarvestState</a>)Obj.State;</div>
+<div class="line"></div>
+<div class="line">        if (state.BadData)</div>
+<div class="line">        {</div>
+<div class="line">            Debug.Log(<span class="stringliteral">&quot;State is invalid.&quot;</span>);</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (state.CurrentStage == <a class="code" href="class_crop_harvest_system.html">CropHarvestSystem</a>.Stage.Growing)</div>
 <div class="line">        {</div>
 <div class="line">            Debug.Log(<span class="stringliteral">&quot;Crop is growing. Time Left:&quot;</span> + state.GetTimeLeftString());</div>
 <div class="line">        }</div>
@@ -208,10 +219,15 @@ Harvesting A Crop</h2>
 <div class="line">            <span class="keywordflow">return</span>;</div>
 <div class="line">        }</div>
 <div class="line">        <span class="keywordflow">if</span> (Input.GetMouseButtonDown(0))</div>
-<div class="line">            <a class="code" href="class_crop_harvest_system.html">CropHarvestSystem</a>.Get.Harvest(Obj);</div>
+<div class="line">            <a class="code" href="class_crop_harvest_system.html">CropHarvestSystem</a>.Get.<a class="code" href="class_crop_harvest_system.html#ac5e4c926d5840b52cbf367568ab6b2bf">Harvest</a>(Obj);</div>
 <div class="line"></div>
-<div class="line">        <a class="code" href="class_crop_harvest_system_1_1_crop_harvest_state.html">CropHarvestSystem.CropHarvestState</a> state = CropHarvestSystem.Get.GetHarvestStateFor(Obj);</div>
-<div class="line">        <span class="keywordflow">if</span> (state.CurrentStage == <a class="code" href="class_crop_harvest_system.html">CropHarvestSystem</a>.Stage.Growing)</div>
+<div class="line">        <a class="code" href="class_crop_harvest_system_1_1_crop_harvest_state.html">CropHarvestSystem.CropHarvestState</a> state = (<a class="code" href="class_crop_harvest_system_1_1_crop_harvest_state.html">CropHarvestSystem.CropHarvestState</a>)Obj.State;</div>
+<div class="line"></div>
+<div class="line">        if (state.BadData)</div>
+<div class="line">        {</div>
+<div class="line">            Debug.Log(<span class="stringliteral">&quot;State is invalid.&quot;</span>);</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (state.CurrentStage == <a class="code" href="class_crop_harvest_system.html">CropHarvestSystem</a>.Stage.Growing)</div>
 <div class="line">        {</div>
 <div class="line">            Debug.Log(<span class="stringliteral">&quot;Crop is growing. Time Left:&quot;</span> + state.GetTimeLeftString());</div>
 <div class="line">        }</div>
@@ -228,7 +244,7 @@ Harvesting A Crop</h2>
 </div><!-- fragment --> </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 15:18:30 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2014 00:18:50 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

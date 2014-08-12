@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_placement_u_i-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">PlacementUI Class Reference</div>  </div>
@@ -129,21 +129,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Show</b> ()</td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Hide</b> ()</td></tr>
 <tr class="separator:aedb8f7ca76f55e9924a020fb32d4f04b inherit pub_methods_class_game_u_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a2b714f532a939b25830b27c919c80177"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b714f532a939b25830b27c919c80177"></a>
-override IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><b>OnShow</b> ()</td></tr>
-<tr class="separator:a2b714f532a939b25830b27c919c80177"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefce9e05d3dc10576162c4214ca75c44"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aefce9e05d3dc10576162c4214ca75c44"></a>
-override IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><b>OnHide</b> ()</td></tr>
-<tr class="separator:aefce9e05d3dc10576162c4214ca75c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_class_game_u_i"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_game_u_i')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_game_u_i.html">GameUI</a></td></tr>
-<tr class="memitem:a51ec318b04a54c2c39d6fea4cdd03a1a inherit pro_methods_class_game_u_i"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_u_i.html#a51ec318b04a54c2c39d6fea4cdd03a1a">ParseIntFromInput</a> (UIInput input)</td></tr>
-<tr class="memdesc:a51ec318b04a54c2c39d6fea4cdd03a1a inherit pro_methods_class_game_u_i"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses an integer out of a UI input. Returns -1 if the input could not be parsed.  <a href="#a51ec318b04a54c2c39d6fea4cdd03a1a">More...</a><br /></td></tr>
-<tr class="separator:a51ec318b04a54c2c39d6fea4cdd03a1a inherit pro_methods_class_game_u_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa72b55ef8f4efe5e959358443b67edf0 inherit pro_methods_class_game_u_i"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa72b55ef8f4efe5e959358443b67edf0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearTransitionState</b> ()</td></tr>
-<tr class="separator:aa72b55ef8f4efe5e959358443b67edf0 inherit pro_methods_class_game_u_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a2d3768bd88fc9e00c0e808451e0ba380"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d3768bd88fc9e00c0e808451e0ba380"></a>
+UIWidget&#160;</td><td class="memItemRight" valign="bottom"><b>ButtonAccept</b></td></tr>
+<tr class="separator:a2d3768bd88fc9e00c0e808451e0ba380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8538879eff75501c7dada2b5b346bb9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8538879eff75501c7dada2b5b346bb9"></a>
+UIWidget&#160;</td><td class="memItemRight" valign="bottom"><b>ButtonDecline</b></td></tr>
+<tr class="separator:aa8538879eff75501c7dada2b5b346bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -153,6 +146,19 @@ Additional Inherited Members</h2></td></tr>
 <b>NotTransitioning</b>
  }</td></tr>
 <tr class="separator:a44705860796687186fa9cb828deeaabc inherit pro_types_class_game_u_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_game_u_i"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_game_u_i')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_game_u_i.html">GameUI</a></td></tr>
+<tr class="memitem:a8a0df52ab204dba1bedd49e66ec3aee4 inherit pro_methods_class_game_u_i"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a0df52ab204dba1bedd49e66ec3aee4"></a>
+virtual IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><b>OnShow</b> ()</td></tr>
+<tr class="separator:a8a0df52ab204dba1bedd49e66ec3aee4 inherit pro_methods_class_game_u_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabebaa6057008978805c821ae3be5050 inherit pro_methods_class_game_u_i"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aabebaa6057008978805c821ae3be5050"></a>
+virtual IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><b>OnHide</b> ()</td></tr>
+<tr class="separator:aabebaa6057008978805c821ae3be5050 inherit pro_methods_class_game_u_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51ec318b04a54c2c39d6fea4cdd03a1a inherit pro_methods_class_game_u_i"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_u_i.html#a51ec318b04a54c2c39d6fea4cdd03a1a">ParseIntFromInput</a> (UIInput input)</td></tr>
+<tr class="memdesc:a51ec318b04a54c2c39d6fea4cdd03a1a inherit pro_methods_class_game_u_i"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses an integer out of a UI input. Returns -1 if the input could not be parsed.  <a href="#a51ec318b04a54c2c39d6fea4cdd03a1a">More...</a><br /></td></tr>
+<tr class="separator:a51ec318b04a54c2c39d6fea4cdd03a1a inherit pro_methods_class_game_u_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72b55ef8f4efe5e959358443b67edf0 inherit pro_methods_class_game_u_i"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa72b55ef8f4efe5e959358443b67edf0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearTransitionState</b> ()</td></tr>
+<tr class="separator:aa72b55ef8f4efe5e959358443b67edf0 inherit pro_methods_class_game_u_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_game_u_i"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_game_u_i')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_game_u_i.html">GameUI</a></td></tr>
 <tr class="memitem:a311ea77334861266ea8316bfbcf4c2a7 inherit pro_attribs_class_game_u_i"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a311ea77334861266ea8316bfbcf4c2a7"></a>
 TransitionDirection&#160;</td><td class="memItemRight" valign="bottom"><b>_transitioning</b> = TransitionDirection.NotTransitioning</td></tr>
@@ -177,7 +183,7 @@ UIPanel&#160;</td><td class="memItemRight" valign="bottom"><b>Panel</b><code> [g
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 15:18:32 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2014 00:18:51 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

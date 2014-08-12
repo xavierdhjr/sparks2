@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -94,6 +94,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">FrameTimer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Helper class that adds Time.deltaTime every frame until a time limit is reached.  
+ <a href="class_frame_timer.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -103,6 +106,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad8e269d12df1f0e21e37a43b7470de98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8e269d12df1f0e21e37a43b7470de98"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>NextFrame</b> (float dt)</td></tr>
 <tr class="separator:ad8e269d12df1f0e21e37a43b7470de98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a743ef04ea99ee38260eed6e8768f590c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a743ef04ea99ee38260eed6e8768f590c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr>
+<tr class="separator:a743ef04ea99ee38260eed6e8768f590c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -110,13 +116,15 @@ Properties</h2></td></tr>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>Progress</b><code> [get]</code></td></tr>
 <tr class="separator:a947fb4823a65004555e27d97ac4318cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Helper class that adds Time.deltaTime every frame until a time limit is reached. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/Raider/Documents/Sparks2/Assets/Scripts/Grid/Interaction/GridObjectDrag.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 15:18:31 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2014 00:18:50 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -1,5 +1,24 @@
 var searchData=
 [
-  ['emptybehaviour',['EmptyBehaviour',['../class_empty_behaviour.html',1,'']]],
-  ['errorui',['ErrorUI',['../class_error_u_i.html',1,'']]]
+  ['dataeditorwindow',['DataEditorWindow',['../class_data_editor_window.html',1,'']]],
+  ['datareader',['DataReader',['../class_data_reader.html',1,'']]],
+  ['datareadresult',['DataReadResult',['../class_data_read_result.html',1,'']]],
+  ['datatransfer',['DataTransfer',['../class_data_transfer.html',1,'']]],
+  ['datawriter',['DataWriter',['../class_data_writer.html',1,'']]],
+  ['datawriteresult',['DataWriteResult',['../class_data_write_result.html',1,'']]],
+  ['day',['Day',['../class_hebrew_date_time_1_1_hebrew_date.html#addd5e5a0b88c263ba08d6ad3d7deab43',1,'HebrewDateTime::HebrewDate']]],
+  ['daybg',['DayBG',['../class_calendar_u_i.html#aa68a433fcf3a754c6dbdbed64fd7080b',1,'CalendarUI']]],
+  ['daymarker',['DayMarker',['../class_calendar_u_i.html#adf553fef4cd39c184f9e5c30001007dc',1,'CalendarUI']]],
+  ['dayoftheweek',['DayOfTheWeek',['../class_hebrew_date_time_1_1_hebrew_date.html#ab0b737e482f55b49bc468097502df318',1,'HebrewDateTime::HebrewDate']]],
+  ['dayoftheweekstr',['DayOfTheWeekStr',['../class_hebrew_date_time_1_1_hebrew_date.html#ac811b80e5bc696e3503bb5b0aec49b3e',1,'HebrewDateTime::HebrewDate']]],
+  ['deepcopypreserveid',['DeepCopyPreserveId',['../class_cloneable_object.html#a9e9b2e735ec08c1bc1034e142b1706b3',1,'CloneableObject']]],
+  ['description',['Description',['../class_conditional_event_info.html#a56ac3ea324810b22b0897f80dd255f88',1,'ConditionalEventInfo']]],
+  ['dialog',['Dialog',['../class_dialog.html',1,'']]],
+  ['dialogevent',['DialogEvent',['../class_dialog_event.html',1,'']]],
+  ['dialogeventshowtext',['DialogEventShowText',['../class_dialog_event_show_text.html',1,'']]],
+  ['dialogoption',['DialogOption',['../class_dialog_option.html',1,'']]],
+  ['dialogui',['DialogUI',['../class_dialog_u_i.html',1,'']]],
+  ['displayallbuildableland',['DisplayAllBuildableLand',['../class_grid_object_system.html#afa608a791b7db44c92f2b8a382b7bb83',1,'GridObjectSystem']]],
+  ['drag',['Drag',['../struct_drag.html',1,'']]],
+  ['draggable',['Draggable',['../class_grid_object.html#a40b3afd347b296b2b6076092bb56fe54a235a2f24c89c28b3e94afab97d5d1d1d',1,'GridObject']]]
 ];

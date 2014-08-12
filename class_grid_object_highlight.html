@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,6 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_grid_object_highlight-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">GridObjectHighlight Class Reference</div>  </div>
@@ -122,12 +123,14 @@ Public Attributes</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HighlightOnHover</b> = true</td></tr>
 <tr class="separator:a84d3e4931df7a0c6b932cb5a69cece61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a5c209e0d661ff3114baa4d225b1f00d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c209e0d661ff3114baa4d225b1f00d4"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDestroy</b> ()</td></tr>
+<tr class="separator:a5c209e0d661ff3114baa4d225b1f00d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_class_mono_behaviour_x"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_mono_behaviour_x')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_mono_behaviour_x.html">MonoBehaviourX</a></td></tr>
-<tr class="memitem:a26427cdb74b68405b827c42420f30128 inherit pro_methods_class_mono_behaviour_x"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26427cdb74b68405b827c42420f30128"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDestroy</b> ()</td></tr>
-<tr class="separator:a26427cdb74b68405b827c42420f30128 inherit pro_methods_class_mono_behaviour_x"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_class_mono_behaviour_x"><td colspan="2" onclick="javascript:toggleInherit('properties_class_mono_behaviour_x')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_mono_behaviour_x.html">MonoBehaviourX</a></td></tr>
 <tr class="memitem:ab23864b2fb8974a875940570e27ac907 inherit properties_class_mono_behaviour_x"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab23864b2fb8974a875940570e27ac907"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>Destroyed</b><code> [get]</code></td></tr>
@@ -139,7 +142,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>Destroyed</b><code> [
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 15:18:31 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2014 00:18:50 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

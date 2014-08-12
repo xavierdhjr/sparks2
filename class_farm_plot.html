@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -118,6 +118,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:a40b3afd347b296b2b6076092bb56fe54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attributes that define what a <a class="el" href="class_grid_object.html">GridObject</a> is capable of.  <a href="class_grid_object.html#a40b3afd347b296b2b6076092bb56fe54">More...</a><br /></td></tr>
 <tr class="separator:a40b3afd347b296b2b6076092bb56fe54 inherit pub_types_class_grid_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_grid_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_grid_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_grid_object.html">GridObject</a></td></tr>
+<tr class="memitem:a245b0a1f08ad51c6c3010fa57eb6ae50 inherit pub_methods_class_grid_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a245b0a1f08ad51c6c3010fa57eb6ae50"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Setup</b> ()</td></tr>
+<tr class="separator:a245b0a1f08ad51c6c3010fa57eb6ae50 inherit pub_methods_class_grid_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa356d1cd3e402c9c4cc29bd5f5dce377 inherit pub_methods_class_grid_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa356d1cd3e402c9c4cc29bd5f5dce377"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>TakesUpSpace</b> (<a class="el" href="class_grid_object.html">GridObject</a> other)</td></tr>
 <tr class="separator:aa356d1cd3e402c9c4cc29bd5f5dce377 inherit pub_methods_class_grid_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,9 +130,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupCapabilities</b>
 <tr class="memitem:aff31377f0a5d8a86301dc8d87bc62128 inherit pub_methods_class_grid_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff31377f0a5d8a86301dc8d87bc62128"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsCapableOf</b> (<a class="el" href="class_grid_object.html#a40b3afd347b296b2b6076092bb56fe54">Capability</a> capableOf)</td></tr>
 <tr class="separator:aff31377f0a5d8a86301dc8d87bc62128 inherit pub_methods_class_grid_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3d9ba117aa7a3c6eeb76bf93d2d69b5 inherit pub_methods_class_grid_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3d9ba117aa7a3c6eeb76bf93d2d69b5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetId</b> (int id)</td></tr>
-<tr class="separator:ad3d9ba117aa7a3c6eeb76bf93d2d69b5 inherit pub_methods_class_grid_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4cf096f6dd29fad6ced881f358ec6cb inherit pub_methods_class_grid_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4cf096f6dd29fad6ced881f358ec6cb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetId</b> (<a class="el" href="interface_i_registrar.html">IRegistrar</a> registrar)</td></tr>
+<tr class="separator:af4cf096f6dd29fad6ced881f358ec6cb inherit pub_methods_class_grid_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcc7cbdde8388fca4a860c0369890547 inherit pub_methods_class_grid_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adcc7cbdde8388fca4a860c0369890547"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Move</b> (Vector3 pos)</td></tr>
+<tr class="separator:adcc7cbdde8388fca4a860c0369890547 inherit pub_methods_class_grid_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5298c32cc5ebd78f8d75febef4f58804 inherit pub_methods_class_grid_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5298c32cc5ebd78f8d75febef4f58804"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Rotate</b> (float dir=DEGREES_90)</td></tr>
 <tr class="separator:a5298c32cc5ebd78f8d75febef4f58804 inherit pub_methods_class_grid_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,9 +149,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateCollider</b> 
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveCollider</b> ()</td></tr>
 <tr class="separator:a8f8a693ae2997b556cc978787863db7e inherit pub_methods_class_grid_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_grid_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_grid_object')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_grid_object.html">GridObject</a></td></tr>
-<tr class="memitem:a9602d2936956c3f336fa036eda4e80d3 inherit pub_attribs_class_grid_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9602d2936956c3f336fa036eda4e80d3"></a>
-<a class="el" href="class_grid_object_instance_data.html">GridObjectInstanceData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InstanceData</b> = new <a class="el" href="class_grid_object_instance_data.html">GridObjectInstanceData</a>()</td></tr>
-<tr class="separator:a9602d2936956c3f336fa036eda4e80d3 inherit pub_attribs_class_grid_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a475a619d433a879f6b116db8708cf0be inherit pub_attribs_class_grid_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a475a619d433a879f6b116db8708cf0be"></a>
 const float&#160;</td><td class="memItemRight" valign="bottom"><b>DEGREES_90</b> = 1</td></tr>
 <tr class="separator:a475a619d433a879f6b116db8708cf0be inherit pub_attribs_class_grid_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,6 +158,9 @@ const float&#160;</td><td class="memItemRight" valign="bottom"><b>DEGREES_180</b
 <tr class="memitem:a533c71b08336f76b2c92c67e157f5fbb inherit pub_attribs_class_grid_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a533c71b08336f76b2c92c67e157f5fbb"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>FarmItemId</b></td></tr>
 <tr class="separator:a533c71b08336f76b2c92c67e157f5fbb inherit pub_attribs_class_grid_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f90cde937c747038c6e86ef9c2bafe5 inherit pub_attribs_class_grid_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f90cde937c747038c6e86ef9c2bafe5"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>OwnerId</b></td></tr>
+<tr class="separator:a9f90cde937c747038c6e86ef9c2bafe5 inherit pub_attribs_class_grid_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01d5b034ba82c74bd118decc50735038 inherit pub_attribs_class_grid_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01d5b034ba82c74bd118decc50735038"></a>
 <a class="el" href="class_grid_object.html#a40b3afd347b296b2b6076092bb56fe54">Capability</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Capabilities</b></td></tr>
 <tr class="separator:a01d5b034ba82c74bd118decc50735038 inherit pub_attribs_class_grid_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,6 +187,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Awake</b> ()<
 override void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDestroy</b> ()</td></tr>
 <tr class="separator:ad058128bb967d5f4ae111083f3f1cf31 inherit pro_methods_class_grid_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_class_grid_object"><td colspan="2" onclick="javascript:toggleInherit('properties_class_grid_object')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_grid_object.html">GridObject</a></td></tr>
+<tr class="memitem:af88f29c4d9d08af334d13492d3ab76cc inherit properties_class_grid_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af88f29c4d9d08af334d13492d3ab76cc"></a>
+<a class="el" href="class_grid_object_state.html">GridObjectState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>State</b><code> [get, set]</code></td></tr>
+<tr class="separator:af88f29c4d9d08af334d13492d3ab76cc inherit properties_class_grid_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8165c281bf55846a8f1a143f001859b8 inherit properties_class_grid_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8165c281bf55846a8f1a143f001859b8"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>Id</b><code> [get]</code></td></tr>
 <tr class="separator:a8165c281bf55846a8f1a143f001859b8 inherit properties_class_grid_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,7 +222,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>Destroyed</b><code> [
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 15:18:31 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2014 00:18:50 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

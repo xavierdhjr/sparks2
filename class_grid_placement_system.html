@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,6 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="class_grid_placement_system-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -107,8 +108,9 @@ Inheritance diagram for GridPlacementSystem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:abff5b3eac67867e0a6e476321c79218d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abff5b3eac67867e0a6e476321c79218d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PlacementMode</b> { <b>Purchase</b>, 
-<b>Normal</b>
+<tr class="memitem:abff5b3eac67867e0a6e476321c79218d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abff5b3eac67867e0a6e476321c79218d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PlacementMode</b> { <b>Normal</b>, 
+<b>FromInventory</b>, 
+<b>Purchase</b>
  }</td></tr>
 <tr class="separator:abff5b3eac67867e0a6e476321c79218d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -123,6 +125,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CancelPlacement</b> (
 <tr class="memitem:a920e75ea3b16cf6777ddfc5d5af180b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a920e75ea3b16cf6777ddfc5d5af180b3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AcceptPlacement</b> ()</td></tr>
 <tr class="separator:a920e75ea3b16cf6777ddfc5d5af180b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a57e4e001c4c983c965642673ba3dfe2e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_placement_system.html#a57e4e001c4c983c965642673ba3dfe2e">MoveToCenterOfScreen</a> (<a class="el" href="class_grid_object.html">GridObject</a> obj)</td></tr>
+<tr class="memdesc:a57e4e001c4c983c965642673ba3dfe2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Using the main camera and layermask ~GameSettings.LAYER_TERRAIN, places the <a class="el" href="class_grid_object.html">GridObject</a> in the center of the screen.  <a href="#a57e4e001c4c983c965642673ba3dfe2e">More...</a><br /></td></tr>
+<tr class="separator:a57e4e001c4c983c965642673ba3dfe2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -146,13 +154,40 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ContextLockId</b><code
 <a class="el" href="struct_user_context_system_1_1_context.html">UserContextSystem.Context</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ContextToSwitchTo</b><code> [get]</code></td></tr>
 <tr class="separator:a45451b517a02c542d322ee52ca96f0dc inherit properties_interface_i_user_context_switcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a57e4e001c4c983c965642673ba3dfe2e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void GridPlacementSystem.MoveToCenterOfScreen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_grid_object.html">GridObject</a>&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Using the main camera and layermask ~GameSettings.LAYER_TERRAIN, places the <a class="el" href="class_grid_object.html">GridObject</a> in the center of the screen. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/Raider/Documents/Sparks2/Assets/Scripts/Systems/GridPlacementSystem.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 15:18:31 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2014 00:18:50 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

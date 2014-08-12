@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -93,14 +93,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#properties">Properties</a> &#124;
 <a href="class_crop_harvest_system_1_1_crop_harvest_state-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">CropHarvestSystem.CropHarvestState Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Stored in the <a class="el" href="class_grid_object.html">GridObject</a>'s State field. Describes everything you need to know about the <a class="el" href="class_grid_object.html">GridObject</a>'s harvest situation.  
+ <a href="class_crop_harvest_system_1_1_crop_harvest_state.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for CropHarvestSystem.CropHarvestState:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_crop_harvest_system_1_1_crop_harvest_state.png" usemap="#CropHarvestSystem.CropHarvestState_map" alt=""/>
+  <map id="CropHarvestSystem.CropHarvestState_map" name="CropHarvestSystem.CropHarvestState_map">
+<area href="class_grid_object_state.html" alt="GridObjectState" shape="rect" coords="0,0,228,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a0a7d1851830ec33646e9f7dbf4b10ebb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a7d1851830ec33646e9f7dbf4b10ebb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CropHarvestState</b> (Stage stage, <a class="el" href="class_crop_harvest_info.html">CropHarvestInfo</a> harvestInfo, System.DateTime timeEnteredStage, int energyAdded)</td></tr>
+<tr class="separator:a0a7d1851830ec33646e9f7dbf4b10ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd552dd71fe8c8a7514b004f7efd0d53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd552dd71fe8c8a7514b004f7efd0d53"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>GetSecondsLeft</b> ()</td></tr>
 <tr class="separator:abd552dd71fe8c8a7514b004f7efd0d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,29 +135,67 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a6b576e56666ec9ffc0a83965357ed0f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b576e56666ec9ffc0a83965357ed0f0"></a>
 Stage&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentStage</b></td></tr>
 <tr class="separator:a6b576e56666ec9ffc0a83965357ed0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14888294586ef312228d642b89d50fde"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14888294586ef312228d642b89d50fde"></a>
-<a class="el" href="class_grid_object.html">GridObject</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CurrentObj</b></td></tr>
-<tr class="separator:a14888294586ef312228d642b89d50fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5116046632fef5599054182b89cf633"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5116046632fef5599054182b89cf633"></a>
 <a class="el" href="class_crop_harvest_info.html">CropHarvestInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>HarvestInfo</b></td></tr>
 <tr class="separator:ac5116046632fef5599054182b89cf633"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8bd63ab383fa2990fa544fa9ec6f8aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8bd63ab383fa2990fa544fa9ec6f8aa"></a>
 <a class="el" href="class_pooled_u_i_sprite.html">PooledUISprite</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Icon</b></td></tr>
 <tr class="separator:ad8bd63ab383fa2990fa544fa9ec6f8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab152864b3314549a4045af9603fc41a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab152864b3314549a4045af9603fc41a6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Paused</b></td></tr>
+<tr class="separator:ab152864b3314549a4045af9603fc41a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a144900dc990173af2cea9585d93eeae9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a144900dc990173af2cea9585d93eeae9"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>EnergyAdded</b></td></tr>
 <tr class="separator:a144900dc990173af2cea9585d93eeae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98d317c0ba1d065f86373ec8601c91f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98d317c0ba1d065f86373ec8601c91f6"></a>
 System.DateTime&#160;</td><td class="memItemRight" valign="bottom"><b>TimeEnteredStage</b></td></tr>
 <tr class="separator:a98d317c0ba1d065f86373ec8601c91f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_class_grid_object_state"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_grid_object_state')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_grid_object_state.html">GridObjectState</a></td></tr>
+<tr class="memitem:a35049ec861c07c597d7b121165ad71fe inherit pub_attribs_class_grid_object_state"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35049ec861c07c597d7b121165ad71fe"></a>
+Vector3&#160;</td><td class="memItemRight" valign="bottom"><b>Position</b></td></tr>
+<tr class="separator:a35049ec861c07c597d7b121165ad71fe inherit pub_attribs_class_grid_object_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a424a5354cff3f0fc022a72e7838aba06 inherit pub_attribs_class_grid_object_state"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a424a5354cff3f0fc022a72e7838aba06"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>Rotation</b></td></tr>
+<tr class="separator:a424a5354cff3f0fc022a72e7838aba06 inherit pub_attribs_class_grid_object_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc0ecfc355520efa9d074af2a5afcbc0 inherit pub_attribs_class_grid_object_state"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc0ecfc355520efa9d074af2a5afcbc0"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>InstanceId</b></td></tr>
+<tr class="separator:adc0ecfc355520efa9d074af2a5afcbc0 inherit pub_attribs_class_grid_object_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:abeaa1f67fdf50af134df897d5bad39cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abeaa1f67fdf50af134df897d5bad39cc"></a>
+override string&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b><code> [get]</code></td></tr>
+<tr class="separator:abeaa1f67fdf50af134df897d5bad39cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_class_grid_object_state"><td colspan="2" onclick="javascript:toggleInherit('properties_class_grid_object_state')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_grid_object_state.html">GridObjectState</a></td></tr>
+<tr class="memitem:a237eade21df6720d4275afa825aad24a inherit properties_class_grid_object_state"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a237eade21df6720d4275afa825aad24a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>BadData</b><code> [get]</code></td></tr>
+<tr class="separator:a237eade21df6720d4275afa825aad24a inherit properties_class_grid_object_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d62ceb7a885273db9c32bc2decb038 inherit properties_class_grid_object_state"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14d62ceb7a885273db9c32bc2decb038"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>BadDataReason</b><code> [get]</code></td></tr>
+<tr class="separator:a14d62ceb7a885273db9c32bc2decb038 inherit properties_class_grid_object_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a059d988d4b04d768969f488859e4a068 inherit properties_class_grid_object_state"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a059d988d4b04d768969f488859e4a068"></a>
+virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>Name</b><code> [get]</code></td></tr>
+<tr class="separator:a059d988d4b04d768969f488859e4a068 inherit properties_class_grid_object_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_class_grid_object_state"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_grid_object_state')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_grid_object_state.html">GridObjectState</a></td></tr>
+<tr class="memitem:afb8be9c1768b761709e057eb27e4a343 inherit pro_methods_class_grid_object_state"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb8be9c1768b761709e057eb27e4a343"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBadData</b> (bool b)</td></tr>
+<tr class="separator:afb8be9c1768b761709e057eb27e4a343 inherit pro_methods_class_grid_object_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5599d485533130a2c892e98faaf7bf3d inherit pro_methods_class_grid_object_state"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5599d485533130a2c892e98faaf7bf3d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBadDataReason</b> (string r)</td></tr>
+<tr class="separator:a5599d485533130a2c892e98faaf7bf3d inherit pro_methods_class_grid_object_state"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Stored in the <a class="el" href="class_grid_object.html">GridObject</a>'s State field. Describes everything you need to know about the <a class="el" href="class_grid_object.html">GridObject</a>'s harvest situation. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/Raider/Documents/Sparks2/Assets/Scripts/Systems/CropHarvestSystem.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 15:18:30 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2014 00:18:50 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

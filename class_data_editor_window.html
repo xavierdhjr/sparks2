@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,7 +87,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="class_data_editor_window-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -103,28 +105,79 @@ Inheritance diagram for DataEditorWindow:</div>
 </map>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a17e4857b0885c14c42237e0f40c9d142"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17e4857b0885c14c42237e0f40c9d142"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Fix</b> (<a class="el" href="class_grid_object.html">GridObject</a> obj)</td></tr>
-<tr class="separator:a17e4857b0885c14c42237e0f40c9d142"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add02e7277449d3c13f909a97ae8500e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add02e7277449d3c13f909a97ae8500e7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>GridObjectInfoGUI</b> (<a class="el" href="class_grid_object.html">GridObject</a> obj)</td></tr>
-<tr class="separator:add02e7277449d3c13f909a97ae8500e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_editor_window_1_1_editable_data_g_u_i_3_01_t_01_4.html">EditableDataGUI&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a consistent looking GUI for data that can be edited. Provides a lot of base functionality commonly needed by various editing operations.  <a href="class_data_editor_window_1_1_editable_data_g_u_i_3_01_t_01_4.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_editor_window_1_1_edit_g_u_i___buildable_areas.html">EditGUI_BuildableAreas</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_editor_window_1_1_edit_g_u_i___craftables.html">EditGUI_Craftables</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_editor_window_1_1_edit_g_u_i___crop_harvests.html">EditGUI_CropHarvests</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_editor_window_1_1_edit_g_u_i___farm_item_info.html">EditGUI_FarmItemInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_editor_window_1_1_edit_g_u_i___grid_object_info.html">EditGUI_GridObjectInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_editor_window_1_1_edit_g_u_i___purchaseables.html">EditGUI_Purchaseables</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_editor_window_1_1_edit_g_u_i___unlockables.html">EditGUI_Unlockables</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a5b33997f485171ba94d48a5d3c4e7ad4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b33997f485171ba94d48a5d3c4e7ad4"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ShowGUI</b> { <br />
+&#160;&#160;<b>FarmItems</b>, 
+<b>CropHarvests</b>, 
+<b>GridObjects</b>, 
+<b>Purchaseables</b>, 
+<br />
+&#160;&#160;<b>Unlockables</b>, 
+<b>Areas</b>, 
+<b>Craftables</b>
+<br />
+ }</td></tr>
+<tr class="separator:a5b33997f485171ba94d48a5d3c4e7ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:ad398c9e05b4311329f3746a986801ef9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad398c9e05b4311329f3746a986801ef9"></a>
+<a class="el" href="class_data_editor_window_1_1_edit_g_u_i___crop_harvests.html">EditGUI_CropHarvests</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_cropHarvestGUI</b> = new <a class="el" href="class_data_editor_window_1_1_edit_g_u_i___crop_harvests.html">EditGUI_CropHarvests</a>()</td></tr>
+<tr class="separator:ad398c9e05b4311329f3746a986801ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d86e59d771891a19679cdaca40c6f5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37d86e59d771891a19679cdaca40c6f5"></a>
+<a class="el" href="class_data_editor_window_1_1_edit_g_u_i___farm_item_info.html">EditGUI_FarmItemInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_farmItemGUI</b> = new <a class="el" href="class_data_editor_window_1_1_edit_g_u_i___farm_item_info.html">EditGUI_FarmItemInfo</a>()</td></tr>
+<tr class="separator:a37d86e59d771891a19679cdaca40c6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92de6b8e443de8d1243cc4b0feca8df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae92de6b8e443de8d1243cc4b0feca8df"></a>
+<a class="el" href="class_data_editor_window_1_1_edit_g_u_i___grid_object_info.html">EditGUI_GridObjectInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_gridObjectGUI</b> = new <a class="el" href="class_data_editor_window_1_1_edit_g_u_i___grid_object_info.html">EditGUI_GridObjectInfo</a>()</td></tr>
+<tr class="separator:ae92de6b8e443de8d1243cc4b0feca8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67547e13d19e7e0ae96ee1a13f4f5897"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67547e13d19e7e0ae96ee1a13f4f5897"></a>
+<a class="el" href="class_data_editor_window_1_1_edit_g_u_i___purchaseables.html">EditGUI_Purchaseables</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_purchasablesGUI</b> = new <a class="el" href="class_data_editor_window_1_1_edit_g_u_i___purchaseables.html">EditGUI_Purchaseables</a>()</td></tr>
+<tr class="separator:a67547e13d19e7e0ae96ee1a13f4f5897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1576d45363a75a0856a8513b70ee021d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1576d45363a75a0856a8513b70ee021d"></a>
+<a class="el" href="class_data_editor_window_1_1_edit_g_u_i___unlockables.html">EditGUI_Unlockables</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_unlockablesGUI</b> = new <a class="el" href="class_data_editor_window_1_1_edit_g_u_i___unlockables.html">EditGUI_Unlockables</a>()</td></tr>
+<tr class="separator:a1576d45363a75a0856a8513b70ee021d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae590f5e779a231987ee259dcea01aefa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae590f5e779a231987ee259dcea01aefa"></a>
+<a class="el" href="class_data_editor_window_1_1_edit_g_u_i___buildable_areas.html">EditGUI_BuildableAreas</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_buildableAreasGUI</b> = new <a class="el" href="class_data_editor_window_1_1_edit_g_u_i___buildable_areas.html">EditGUI_BuildableAreas</a>()</td></tr>
+<tr class="separator:ae590f5e779a231987ee259dcea01aefa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a994653e73b411f314df0b5b5654f52ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a994653e73b411f314df0b5b5654f52ce"></a>
+<a class="el" href="class_data_editor_window_1_1_edit_g_u_i___craftables.html">EditGUI_Craftables</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_craftablesGUI</b> = new <a class="el" href="class_data_editor_window_1_1_edit_g_u_i___craftables.html">EditGUI_Craftables</a>()</td></tr>
+<tr class="separator:a994653e73b411f314df0b5b5654f52ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a0c7af6803696ca3f64fd4ffdd8a48f43"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c7af6803696ca3f64fd4ffdd8a48f43"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>Open</b><code> [get]</code></td></tr>
-<tr class="separator:a0c7af6803696ca3f64fd4ffdd8a48f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3a4e571ff5a25df9321c479a77fb8d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3a4e571ff5a25df9321c479a77fb8d5"></a>
+static <a class="el" href="class_data_editor_window.html">DataEditorWindow</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_window</b><code> [get]</code></td></tr>
+<tr class="separator:aa3a4e571ff5a25df9321c479a77fb8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>C:/Users/Raider/Documents/Sparks2/Assets/Scripts/Data/Editor/DataEditor.AreasGUI.cs</li>
 <li>C:/Users/Raider/Documents/Sparks2/Assets/Scripts/Data/Editor/DataEditorWindow.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 15:18:30 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2014 00:18:50 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,47 +87,192 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#properties">Properties</a> &#124;
 <a href="class_hebrew_calendar-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">HebrewCalendar Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for HebrewCalendar:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_hebrew_calendar.png" usemap="#HebrewCalendar_map" alt=""/>
-  <map id="HebrewCalendar_map" name="HebrewCalendar_map">
-</map>
- </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a119bed8d4295cee6f8d1b2f6417cad60"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a119bed8d4295cee6f8d1b2f6417cad60"></a>
 delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDaysCompleteEventHandler</b> (int days)</td></tr>
 <tr class="separator:a119bed8d4295cee6f8d1b2f6417cad60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0970e14a6150c7297766f9c823b436e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0970e14a6150c7297766f9c823b436e9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SynchronizeWithServer</b> ()</td></tr>
+<tr class="memitem:a0970e14a6150c7297766f9c823b436e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hebrew_calendar.html#a0970e14a6150c7297766f9c823b436e9">SynchronizeWithServer</a> ()</td></tr>
+<tr class="memdesc:a0970e14a6150c7297766f9c823b436e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronizes the date and time with server.  <a href="#a0970e14a6150c7297766f9c823b436e9">More...</a><br /></td></tr>
 <tr class="separator:a0970e14a6150c7297766f9c823b436e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1850dcef22e01b9f098e17fc55588c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1850dcef22e01b9f098e17fc55588c8"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>GetDateTimeString</b> ()</td></tr>
-<tr class="separator:ad1850dcef22e01b9f098e17fc55588c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c06d214b3bbe00037bbcc4cf71d5695"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c06d214b3bbe00037bbcc4cf71d5695"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>GetDateString</b> ()</td></tr>
+<tr class="memitem:a3aaa72572983495a8452b1f38ed4791d"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hebrew_calendar.html#a3aaa72572983495a8452b1f38ed4791d">ToString</a> ()</td></tr>
+<tr class="memdesc:a3aaa72572983495a8452b1f38ed4791d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a System.String that represents the current <a class="el" href="class_hebrew_calendar.html">HebrewCalendar</a>.  <a href="#a3aaa72572983495a8452b1f38ed4791d">More...</a><br /></td></tr>
+<tr class="separator:a3aaa72572983495a8452b1f38ed4791d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c06d214b3bbe00037bbcc4cf71d5695"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hebrew_calendar.html#a2c06d214b3bbe00037bbcc4cf71d5695">GetDateString</a> ()</td></tr>
+<tr class="memdesc:a2c06d214b3bbe00037bbcc4cf71d5695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the date string.  <a href="#a2c06d214b3bbe00037bbcc4cf71d5695">More...</a><br /></td></tr>
 <tr class="separator:a2c06d214b3bbe00037bbcc4cf71d5695"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5935fe9c998f59017a1a2a1fd465f0ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5935fe9c998f59017a1a2a1fd465f0ae"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>GetPercentageDayCompleted</b> ()</td></tr>
+<tr class="memitem:ab5a93cd1d52af1590b47a6fc2ce9a00f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hebrew_calendar.html#ab5a93cd1d52af1590b47a6fc2ce9a00f">GetTimeString</a> ()</td></tr>
+<tr class="memdesc:ab5a93cd1d52af1590b47a6fc2ce9a00f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the time string.  <a href="#ab5a93cd1d52af1590b47a6fc2ce9a00f">More...</a><br /></td></tr>
+<tr class="separator:ab5a93cd1d52af1590b47a6fc2ce9a00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5935fe9c998f59017a1a2a1fd465f0ae"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hebrew_calendar.html#a5935fe9c998f59017a1a2a1fd465f0ae">GetPercentageDayCompleted</a> ()</td></tr>
+<tr class="memdesc:a5935fe9c998f59017a1a2a1fd465f0ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the percentage of the day completed.  <a href="#a5935fe9c998f59017a1a2a1fd465f0ae">More...</a><br /></td></tr>
 <tr class="separator:a5935fe9c998f59017a1a2a1fd465f0ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5012d06371b5874c5de12dd170c65654"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_conditional_event_info.html">ConditionalEventInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hebrew_calendar.html#a5012d06371b5874c5de12dd170c65654">GetUpcomingEvents</a> ()</td></tr>
+<tr class="memdesc:a5012d06371b5874c5de12dd170c65654"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the next upcoming event info.  <a href="#a5012d06371b5874c5de12dd170c65654">More...</a><br /></td></tr>
+<tr class="separator:a5012d06371b5874c5de12dd170c65654"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4232c02ab0b487c99585e30fc889fff4"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_conditional_event_info.html">ConditionalEventInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hebrew_calendar.html#a4232c02ab0b487c99585e30fc889fff4">GetCurrentEvents</a> ()</td></tr>
+<tr class="memdesc:a4232c02ab0b487c99585e30fc889fff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a list of events that are going on now.  <a href="#a4232c02ab0b487c99585e30fc889fff4">More...</a><br /></td></tr>
+<tr class="separator:a4232c02ab0b487c99585e30fc889fff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935c9888db553ae1dda2f8c62a197207"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a935c9888db553ae1dda2f8c62a197207"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetYearInShemittaCycle</b> ()</td></tr>
+<tr class="separator:a935c9888db553ae1dda2f8c62a197207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac02cb3b29000938c0210771eac56f3e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac02cb3b29000938c0210771eac56f3e6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetShemittaCycle</b> ()</td></tr>
+<tr class="separator:ac02cb3b29000938c0210771eac56f3e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51c5c7bc9c90fd63646c56ef14d38256"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51c5c7bc9c90fd63646c56ef14d38256"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>GetDayString</b> ()</td></tr>
+<tr class="separator:a51c5c7bc9c90fd63646c56ef14d38256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad238a6568aecf2cbf00aab7e85a81117"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad238a6568aecf2cbf00aab7e85a81117"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>GetMonthString</b> ()</td></tr>
+<tr class="separator:ad238a6568aecf2cbf00aab7e85a81117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Properties</h2></td></tr>
+<tr class="memitem:a8918fa5e0d95352b2228908300cb1116"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8918fa5e0d95352b2228908300cb1116"></a>
+List&lt; <a class="el" href="class_conditional_event_info.html">ConditionalEventInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Events</b><code> [get, set]</code></td></tr>
+<tr class="separator:a8918fa5e0d95352b2228908300cb1116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a4232c02ab0b487c99585e30fc889fff4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_conditional_event_info.html">ConditionalEventInfo</a>&gt; HebrewCalendar.GetCurrentEvents </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a list of events that are going on now. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current events going on now.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2c06d214b3bbe00037bbcc4cf71d5695"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string HebrewCalendar.GetDateString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the date string. </p>
+<dl class="section return"><dt>Returns</dt><dd>The date string.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5935fe9c998f59017a1a2a1fd465f0ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float HebrewCalendar.GetPercentageDayCompleted </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the percentage of the day completed. </p>
+<dl class="section return"><dt>Returns</dt><dd>The percentage of the day completed.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab5a93cd1d52af1590b47a6fc2ce9a00f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string HebrewCalendar.GetTimeString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the time string. </p>
+<dl class="section return"><dt>Returns</dt><dd>The time string.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5012d06371b5874c5de12dd170c65654"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_conditional_event_info.html">ConditionalEventInfo</a>&gt; HebrewCalendar.GetUpcomingEvents </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the next upcoming event info. </p>
+<dl class="section return"><dt>Returns</dt><dd>The next upcoming event info.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0970e14a6150c7297766f9c823b436e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HebrewCalendar.SynchronizeWithServer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Synchronizes the date and time with server. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3aaa72572983495a8452b1f38ed4791d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">override string HebrewCalendar.ToString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a System.String that represents the current <a class="el" href="class_hebrew_calendar.html">HebrewCalendar</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>A System.String that represents the current <a class="el" href="class_hebrew_calendar.html">HebrewCalendar</a>.</dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Raider/Documents/Sparks2/Assets/Scripts/Systems/CalendarSystem.cs</li>
+<li>C:/Users/Raider/Documents/Sparks2/Assets/Scripts/Systems/Models/HebrewCalendar.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 15:18:31 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2014 00:18:50 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

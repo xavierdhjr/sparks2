@@ -4,6 +4,8 @@ var searchData=
   ['datareader',['DataReader',['../class_data_reader.html',1,'']]],
   ['datareadresult',['DataReadResult',['../class_data_read_result.html',1,'']]],
   ['datatransfer',['DataTransfer',['../class_data_transfer.html',1,'']]],
+  ['datawriter',['DataWriter',['../class_data_writer.html',1,'']]],
+  ['datawriteresult',['DataWriteResult',['../class_data_write_result.html',1,'']]],
   ['dialog',['Dialog',['../class_dialog.html',1,'']]],
   ['dialogevent',['DialogEvent',['../class_dialog_event.html',1,'']]],
   ['dialogeventshowtext',['DialogEventShowText',['../class_dialog_event_show_text.html',1,'']]],

@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -108,15 +108,21 @@ Inheritance diagram for GUIInteractionSystem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ae21115f152e9f2199b8a40aed239c00c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae21115f152e9f2199b8a40aed239c00c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowInventory</b> (bool show)</td></tr>
+<tr class="separator:ae21115f152e9f2199b8a40aed239c00c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b0412ca6c3180d0659ecf0ef5646a70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b0412ca6c3180d0659ecf0ef5646a70"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowHarvestInfo</b> (bool show, <a class="el" href="class_grid_object.html">GridObject</a> harvestableObj=null)</td></tr>
 <tr class="separator:a8b0412ca6c3180d0659ecf0ef5646a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e862d8892b53c1e30c72a4918815e2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e862d8892b53c1e30c72a4918815e2c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowMaintainInfo</b> (bool show, <a class="el" href="class_grid_object.html">GridObject</a> harvestableObj)</td></tr>
-<tr class="separator:a1e862d8892b53c1e30c72a4918815e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2323ae7ad90fbdc8cb8c31e5efa79e4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2323ae7ad90fbdc8cb8c31e5efa79e4e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowPlacement</b> (bool show, <a class="el" href="class_grid_object.html">GridObject</a> placeableObj=null)</td></tr>
-<tr class="separator:a2323ae7ad90fbdc8cb8c31e5efa79e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8323ee7c12f7cbb596e058142ffdafb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8323ee7c12f7cbb596e058142ffdafb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowMaintainInfo</b> (bool show, <a class="el" href="class_grid_object.html">GridObject</a> harvestableObj=null)</td></tr>
+<tr class="separator:ae8323ee7c12f7cbb596e058142ffdafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8bcfd2529edf35338d05bd9fb62ed15"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8bcfd2529edf35338d05bd9fb62ed15"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowPlacement</b> (bool show, <a class="el" href="class_grid_object.html">GridObject</a> placeableObj=null, GridPlacementSystem.PlacementMode mode=GridPlacementSystem.PlacementMode.Normal, bool showAccept=true, bool showCancel=true)</td></tr>
+<tr class="separator:ac8bcfd2529edf35338d05bd9fb62ed15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a463d3a429efc0093f2e19d50bd11011d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a463d3a429efc0093f2e19d50bd11011d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdatePlacement</b> (bool showAccept, bool showCancel)</td></tr>
+<tr class="separator:a463d3a429efc0093f2e19d50bd11011d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b35c4c2674bfc59a17722e9ae6a5b2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b35c4c2674bfc59a17722e9ae6a5b2d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowLabelFor</b> (bool show, <a class="el" href="class_grid_object.html">GridObject</a> obj=null)</td></tr>
 <tr class="separator:a8b35c4c2674bfc59a17722e9ae6a5b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,7 +158,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ContextLockId</b><code
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 15:18:31 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2014 00:18:50 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

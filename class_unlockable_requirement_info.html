@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -104,15 +104,12 @@ override string&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</
 <tr class="memitem:aaa870d4f8c8e127e720f3b755a7716bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa870d4f8c8e127e720f3b755a7716bf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ConsumeResourcesFrom</b> (<a class="el" href="class_player_data.html">PlayerData</a> data)</td></tr>
 <tr class="separator:aaa870d4f8c8e127e720f3b755a7716bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8aa004729c7957a09e2293323c5dffc6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8aa004729c7957a09e2293323c5dffc6"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>MeetsRequirement</b> (<a class="el" href="class_player_data.html">PlayerData</a> data)</td></tr>
-<tr class="separator:a8aa004729c7957a09e2293323c5dffc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa4de0532d95f7c6d5738cea2205f44"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0aa4de0532d95f7c6d5738cea2205f44"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>MeetsRequirement</b> (<a class="el" href="class_player_data.html">PlayerData</a> data, <a class="el" href="class_game_data_context.html">GameDataContext</a> context)</td></tr>
+<tr class="separator:a0aa4de0532d95f7c6d5738cea2205f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a1bcfeb71b37a8a277f45e22c1fbed79c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1bcfeb71b37a8a277f45e22c1fbed79c"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>LockId</b></td></tr>
-<tr class="separator:a1bcfeb71b37a8a277f45e22c1fbed79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb5edae696f4e5ea21f656e664591f61"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb5edae696f4e5ea21f656e664591f61"></a>
 UnlockableType&#160;</td><td class="memItemRight" valign="bottom"><b>Type</b></td></tr>
 <tr class="separator:aeb5edae696f4e5ea21f656e664591f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,12 +127,12 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>TypeStr</b><code> [
 <tr class="separator:a2927d217be4cb17a466cf5dedd20e613"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Raider/Documents/Sparks2/Assets/Scripts/Data/GameData.cs</li>
+<li>C:/Users/Raider/Documents/Sparks2/Assets/Scripts/Data/Models/UnlockableData.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 15:18:32 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2014 00:18:51 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -100,21 +100,27 @@ Inheritance diagram for CalendarUI:</div>
   <img src="class_calendar_u_i.png" usemap="#CalendarUI_map" alt=""/>
   <map id="CalendarUI_map" name="CalendarUI_map">
 <area href="class_game_u_i.html" alt="GameUI" shape="rect" coords="0,56,112,80"/>
-<area href="interface_i_calendar_listener.html" alt="ICalendarListener" shape="rect" coords="122,56,234,80"/>
+<area href="interface_i_calendar_listener.html" title="Interface to implement a calendar listener " alt="ICalendarListener" shape="rect" coords="122,56,234,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a3193b13decd99d1db6b1dad9cb5ec3ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3193b13decd99d1db6b1dad9cb5ec3ef"></a>
-UILabel&#160;</td><td class="memItemRight" valign="bottom"><b>Date</b></td></tr>
-<tr class="separator:a3193b13decd99d1db6b1dad9cb5ec3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa68a433fcf3a754c6dbdbed64fd7080b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa68a433fcf3a754c6dbdbed64fd7080b"></a>
-UISprite&#160;</td><td class="memItemRight" valign="bottom"><b>DayBG</b></td></tr>
+<tr class="memitem:a66b8c70861f5f16380c5da33a885e3ef"><td class="memItemLeft" align="right" valign="top">UILabel&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calendar_u_i.html#a66b8c70861f5f16380c5da33a885e3ef">Month</a></td></tr>
+<tr class="memdesc:a66b8c70861f5f16380c5da33a885e3ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Label used to display the current date in this format: "{day} of {month}, {year}".  <a href="#a66b8c70861f5f16380c5da33a885e3ef">More...</a><br /></td></tr>
+<tr class="separator:a66b8c70861f5f16380c5da33a885e3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab63f17ecd48fce431b260873f422d0c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab63f17ecd48fce431b260873f422d0c7"></a>
+UILabel&#160;</td><td class="memItemRight" valign="bottom"><b>Day</b></td></tr>
+<tr class="separator:ab63f17ecd48fce431b260873f422d0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa68a433fcf3a754c6dbdbed64fd7080b"><td class="memItemLeft" align="right" valign="top">UISprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calendar_u_i.html#aa68a433fcf3a754c6dbdbed64fd7080b">DayBG</a></td></tr>
+<tr class="memdesc:aa68a433fcf3a754c6dbdbed64fd7080b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The background of the time of day indicator.  <a href="#aa68a433fcf3a754c6dbdbed64fd7080b">More...</a><br /></td></tr>
 <tr class="separator:aa68a433fcf3a754c6dbdbed64fd7080b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf553fef4cd39c184f9e5c30001007dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf553fef4cd39c184f9e5c30001007dc"></a>
-UISprite&#160;</td><td class="memItemRight" valign="bottom"><b>DayMarker</b></td></tr>
+<tr class="memitem:adf553fef4cd39c184f9e5c30001007dc"><td class="memItemLeft" align="right" valign="top">UISprite&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calendar_u_i.html#adf553fef4cd39c184f9e5c30001007dc">DayMarker</a></td></tr>
+<tr class="memdesc:adf553fef4cd39c184f9e5c30001007dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The marker used to indicate the current time of day.  <a href="#adf553fef4cd39c184f9e5c30001007dc">More...</a><br /></td></tr>
 <tr class="separator:adf553fef4cd39c184f9e5c30001007dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af76f279ca2e79ee7c48cc2b02144a6b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af76f279ca2e79ee7c48cc2b02144a6b9"></a>
+UISprite&#160;</td><td class="memItemRight" valign="bottom"><b>DaySlider</b></td></tr>
+<tr class="separator:af76f279ca2e79ee7c48cc2b02144a6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -168,13 +174,56 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>Transitioning</b><cod
 UIPanel&#160;</td><td class="memItemRight" valign="bottom"><b>Panel</b><code> [get]</code></td></tr>
 <tr class="separator:a209b7d046c75aee565b6459b4db41744 inherit properties_class_game_u_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aa68a433fcf3a754c6dbdbed64fd7080b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UISprite CalendarUI.DayBG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The background of the time of day indicator. </p>
+
+</div>
+</div>
+<a class="anchor" id="adf553fef4cd39c184f9e5c30001007dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UISprite CalendarUI.DayMarker</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The marker used to indicate the current time of day. </p>
+
+</div>
+</div>
+<a class="anchor" id="a66b8c70861f5f16380c5da33a885e3ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UILabel CalendarUI.Month</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Label used to display the current date in this format: "{day} of {month}, {year}". </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/Raider/Documents/Sparks2/Assets/Scripts/UI/CalendarUI.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 15:18:30 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2014 00:18:50 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

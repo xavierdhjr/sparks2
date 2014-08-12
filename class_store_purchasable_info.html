@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,12 +89,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#properties">Properties</a> &#124;
 <a href="class_store_purchasable_info-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">StorePurchasableInfo Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for StorePurchasableInfo:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_store_purchasable_info.png" usemap="#StorePurchasableInfo_map" alt=""/>
+  <map id="StorePurchasableInfo_map" name="StorePurchasableInfo_map">
+<area href="class_cloneable_object.html" alt="CloneableObject" shape="rect" coords="0,0,134,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -104,21 +112,37 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ConsumeResources</b> 
 <tr class="memitem:a1398cc21c69db1d6db6a782aa82ae0ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1398cc21c69db1d6db6a782aa82ae0ef"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanAfford</b> (<a class="el" href="class_player_data.html">PlayerData</a> data)</td></tr>
 <tr class="separator:a1398cc21c69db1d6db6a782aa82ae0ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a386cab815d12488e4cc838fd974b012c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a386cab815d12488e4cc838fd974b012c"></a>
-<a class="el" href="class_farm_item_info.html">FarmItemInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FarmItemInfo</b> ()</td></tr>
-<tr class="separator:a386cab815d12488e4cc838fd974b012c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae10df5f574956a9a922ed69c528a29c8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae10df5f574956a9a922ed69c528a29c8"></a>
+<a class="el" href="class_farm_item_info.html">FarmItemInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FarmItemInfo</b> (<a class="el" href="class_game_data_context.html">GameDataContext</a> context)</td></tr>
+<tr class="separator:ae10df5f574956a9a922ed69c528a29c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34d0a2ca7d0837f4d0d5a2020baca8c7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34d0a2ca7d0837f4d0d5a2020baca8c7"></a>
 <a class="el" href="class_resource_info.html">ResourceInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CostResourceInfo</b> ()</td></tr>
 <tr class="separator:a34d0a2ca7d0837f4d0d5a2020baca8c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f72f2176358acd8c981875e30a50cfb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f72f2176358acd8c981875e30a50cfb"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>GetSpriteIcon</b> ()</td></tr>
-<tr class="separator:a4f72f2176358acd8c981875e30a50cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4de5c4a3d53061fbfe83e5f895545ba2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4de5c4a3d53061fbfe83e5f895545ba2"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>GetIconSprite</b> ()</td></tr>
+<tr class="separator:a4de5c4a3d53061fbfe83e5f895545ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c4eb5802d1432fbae12e032e25a3207"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c4eb5802d1432fbae12e032e25a3207"></a>
+override <a class="el" href="class_cloneable_object.html">CloneableObject</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeepCopy</b> ()</td></tr>
+<tr class="separator:a4c4eb5802d1432fbae12e032e25a3207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f115bff5355d986c6620cd0807ed32c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f115bff5355d986c6620cd0807ed32c"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>Assign</b> (<a class="el" href="class_cloneable_object.html">CloneableObject</a> from)</td></tr>
+<tr class="separator:a6f115bff5355d986c6620cd0807ed32c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_cloneable_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_cloneable_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_cloneable_object.html">CloneableObject</a></td></tr>
+<tr class="memitem:a9e9b2e735ec08c1bc1034e142b1706b3 inherit pub_methods_class_cloneable_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_cloneable_object.html">CloneableObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cloneable_object.html#a9e9b2e735ec08c1bc1034e142b1706b3">DeepCopyPreserveId</a> ()</td></tr>
+<tr class="memdesc:a9e9b2e735ec08c1bc1034e142b1706b3 inherit pub_methods_class_cloneable_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like DeepCopy(), but also keeps InstanceId the same.  <a href="#a9e9b2e735ec08c1bc1034e142b1706b3">More...</a><br /></td></tr>
+<tr class="separator:a9e9b2e735ec08c1bc1034e142b1706b3 inherit pub_methods_class_cloneable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefbda207f49875f2f607a707dc47752f inherit pub_methods_class_cloneable_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aefbda207f49875f2f607a707dc47752f"></a>
+<a class="el" href="class_cloneable_object.html">CloneableObject</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ShallowCopy</b> ()</td></tr>
+<tr class="separator:aefbda207f49875f2f607a707dc47752f inherit pub_methods_class_cloneable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ac6163a3ba69ea94c724eeeb731c0fc73"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6163a3ba69ea94c724eeeb731c0fc73"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>PurchasableId</b></td></tr>
 <tr class="separator:ac6163a3ba69ea94c724eeeb731c0fc73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e2ab898236ee24f0f8a3788fab057e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e2ab898236ee24f0f8a3788fab057e4"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>PurchasableName</b></td></tr>
+<tr class="separator:a7e2ab898236ee24f0f8a3788fab057e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4af6cc107716b6f410321ca2bafe8c92"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4af6cc107716b6f410321ca2bafe8c92"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>ItemId</b></td></tr>
 <tr class="separator:a4af6cc107716b6f410321ca2bafe8c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,29 +158,24 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>Cost</b></td></tr>
 <tr class="memitem:a626c3a214caa12de7ca21b8a6fe7c8e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a626c3a214caa12de7ca21b8a6fe7c8e1"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>ResourceId</b></td></tr>
 <tr class="separator:a626c3a214caa12de7ca21b8a6fe7c8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d1d23b5d7c3de0325ab7fa6fecf6ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57d1d23b5d7c3de0325ab7fa6fecf6ad"></a>
+<a class="el" href="class_art_assets.html">ArtAssets</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Art</b></td></tr>
+<tr class="separator:a57d1d23b5d7c3de0325ab7fa6fecf6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
-Properties</h2></td></tr>
-<tr class="memitem:a7e2ab898236ee24f0f8a3788fab057e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e2ab898236ee24f0f8a3788fab057e4"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>PurchasableName</b><code> [get, set]</code></td></tr>
-<tr class="separator:a7e2ab898236ee24f0f8a3788fab057e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4a40d73781dd35099a383d904fd312b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4a40d73781dd35099a383d904fd312b"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>TypeStr</b><code> [get, set]</code></td></tr>
-<tr class="separator:af4a40d73781dd35099a383d904fd312b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5930e567f8cdb055cbad7a2a85ac0a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5930e567f8cdb055cbad7a2a85ac0a1"></a>
-string[]&#160;</td><td class="memItemRight" valign="bottom"><b>ArtAssets</b><code> [get, set]</code></td></tr>
-<tr class="separator:af5930e567f8cdb055cbad7a2a85ac0a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83e29074b194215d8f59aa8f410ceb48"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83e29074b194215d8f59aa8f410ceb48"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>ArtAssetsStr</b><code> [get, set]</code></td></tr>
-<tr class="separator:a83e29074b194215d8f59aa8f410ceb48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header properties_class_cloneable_object"><td colspan="2" onclick="javascript:toggleInherit('properties_class_cloneable_object')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_cloneable_object.html">CloneableObject</a></td></tr>
+<tr class="memitem:a9d1329edf2e178e70b35b41955a34103 inherit properties_class_cloneable_object"><td class="memItemLeft" align="right" valign="top">System.Guid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cloneable_object.html#a9d1329edf2e178e70b35b41955a34103">InstanceId</a><code> [get]</code></td></tr>
+<tr class="memdesc:a9d1329edf2e178e70b35b41955a34103 inherit properties_class_cloneable_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">For managing multiple instances of the same object in a database-like fashion without using object references.  <a href="#a9d1329edf2e178e70b35b41955a34103">More...</a><br /></td></tr>
+<tr class="separator:a9d1329edf2e178e70b35b41955a34103 inherit properties_class_cloneable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Raider/Documents/Sparks2/Assets/Scripts/Data/GameData.cs</li>
+<li>C:/Users/Raider/Documents/Sparks2/Assets/Scripts/Data/Models/StoreData.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 15:18:32 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2014 00:18:51 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

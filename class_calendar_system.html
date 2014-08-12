@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="class_calendar_system-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -105,26 +106,105 @@ Inheritance diagram for CalendarSystem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a15b72d41c072f78dd4b7f1c9638e9ad2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15b72d41c072f78dd4b7f1c9638e9ad2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ListenForTimeUpdate</b> (<a class="el" href="interface_i_calendar_listener.html">ICalendarListener</a> listener)</td></tr>
+<tr class="memitem:a15b72d41c072f78dd4b7f1c9638e9ad2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calendar_system.html#a15b72d41c072f78dd4b7f1c9638e9ad2">ListenForTimeUpdate</a> (<a class="el" href="interface_i_calendar_listener.html">ICalendarListener</a> listener)</td></tr>
+<tr class="memdesc:a15b72d41c072f78dd4b7f1c9638e9ad2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up listener to listen for time updates.  <a href="#a15b72d41c072f78dd4b7f1c9638e9ad2">More...</a><br /></td></tr>
 <tr class="separator:a15b72d41c072f78dd4b7f1c9638e9ad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58a22c384a2a5ca2db2d05d336d69def"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58a22c384a2a5ca2db2d05d336d69def"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>StopListeningForTimeUpdate</b> (<a class="el" href="interface_i_calendar_listener.html">ICalendarListener</a> listener)</td></tr>
+<tr class="memitem:a58a22c384a2a5ca2db2d05d336d69def"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calendar_system.html#a58a22c384a2a5ca2db2d05d336d69def">StopListeningForTimeUpdate</a> (<a class="el" href="interface_i_calendar_listener.html">ICalendarListener</a> listener)</td></tr>
+<tr class="memdesc:a58a22c384a2a5ca2db2d05d336d69def"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop listener from listening to time updates.  <a href="#a58a22c384a2a5ca2db2d05d336d69def">More...</a><br /></td></tr>
 <tr class="separator:a58a22c384a2a5ca2db2d05d336d69def"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a0b4eecb48b69428c1abf98ebc36de298"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b4eecb48b69428c1abf98ebc36de298"></a>
+const string&#160;</td><td class="memItemRight" valign="bottom"><b>RELATIVE_PATH_TO_XMLDATA</b> = &quot;calendardata.xml&quot;</td></tr>
+<tr class="separator:a0b4eecb48b69428c1abf98ebc36de298"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a8d9a5692e0f7aa59ff1b5899b97a6feb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d9a5692e0f7aa59ff1b5899b97a6feb"></a>
-static <a class="el" href="class_calendar_system.html">CalendarSystem</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Get</b><code> [get]</code></td></tr>
+<tr class="memitem:a8d9a5692e0f7aa59ff1b5899b97a6feb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_calendar_system.html">CalendarSystem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_calendar_system.html#a8d9a5692e0f7aa59ff1b5899b97a6feb">Get</a><code> [get]</code></td></tr>
+<tr class="memdesc:a8d9a5692e0f7aa59ff1b5899b97a6feb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the calendar system.  <a href="#a8d9a5692e0f7aa59ff1b5899b97a6feb">More...</a><br /></td></tr>
 <tr class="separator:a8d9a5692e0f7aa59ff1b5899b97a6feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a15b72d41c072f78dd4b7f1c9638e9ad2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CalendarSystem.ListenForTimeUpdate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_i_calendar_listener.html">ICalendarListener</a>&#160;</td>
+          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set up listener to listen for time updates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>Listener to add.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a58a22c384a2a5ca2db2d05d336d69def"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CalendarSystem.StopListeningForTimeUpdate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_i_calendar_listener.html">ICalendarListener</a>&#160;</td>
+          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stop listener from listening to time updates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>Listener to remove.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="a8d9a5692e0f7aa59ff1b5899b97a6feb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_calendar_system.html">CalendarSystem</a> CalendarSystem.Get</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the calendar system. </p>
+<p>The calendar system.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/Raider/Documents/Sparks2/Assets/Scripts/Systems/CalendarSystem.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 15:18:30 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2014 00:18:50 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

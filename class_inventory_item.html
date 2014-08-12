@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,6 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_inventory_item-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -99,25 +100,47 @@ Inheritance diagram for InventoryItem:</div>
  <div class="center">
   <img src="class_inventory_item.png" usemap="#InventoryItem_map" alt=""/>
   <map id="InventoryItem_map" name="InventoryItem_map">
-<area href="class_stacked_item.html" alt="StackedItem" shape="rect" coords="0,0,87,24"/>
+<area href="class_cloneable_object.html" alt="CloneableObject" shape="rect" coords="0,0,106,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3c715faa1d9f4e5c26a5b3fa93086f68"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c715faa1d9f4e5c26a5b3fa93086f68"></a>
+<a class="el" href="class_farm_item_info.html">FarmItemInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetInfo</b> (<a class="el" href="class_game_data_context.html">GameDataContext</a> context)</td></tr>
+<tr class="separator:a3c715faa1d9f4e5c26a5b3fa93086f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74de1389ab6c517207b29e76abd800d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac74de1389ab6c517207b29e76abd800d"></a>
+override <a class="el" href="class_cloneable_object.html">CloneableObject</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DeepCopy</b> ()</td></tr>
+<tr class="separator:ac74de1389ab6c517207b29e76abd800d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70416b3c61fe58c54e2d4977c9f57a93"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70416b3c61fe58c54e2d4977c9f57a93"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>Assign</b> (<a class="el" href="class_cloneable_object.html">CloneableObject</a> from)</td></tr>
+<tr class="separator:a70416b3c61fe58c54e2d4977c9f57a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_cloneable_object"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_cloneable_object')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_cloneable_object.html">CloneableObject</a></td></tr>
+<tr class="memitem:a9e9b2e735ec08c1bc1034e142b1706b3 inherit pub_methods_class_cloneable_object"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_cloneable_object.html">CloneableObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cloneable_object.html#a9e9b2e735ec08c1bc1034e142b1706b3">DeepCopyPreserveId</a> ()</td></tr>
+<tr class="memdesc:a9e9b2e735ec08c1bc1034e142b1706b3 inherit pub_methods_class_cloneable_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like DeepCopy(), but also keeps InstanceId the same.  <a href="#a9e9b2e735ec08c1bc1034e142b1706b3">More...</a><br /></td></tr>
+<tr class="separator:a9e9b2e735ec08c1bc1034e142b1706b3 inherit pub_methods_class_cloneable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefbda207f49875f2f607a707dc47752f inherit pub_methods_class_cloneable_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aefbda207f49875f2f607a707dc47752f"></a>
+<a class="el" href="class_cloneable_object.html">CloneableObject</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ShallowCopy</b> ()</td></tr>
+<tr class="separator:aefbda207f49875f2f607a707dc47752f inherit pub_methods_class_cloneable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:ad89819ffa3a0b99f964d1c4c8be59e83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad89819ffa3a0b99f964d1c4c8be59e83"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>FarmItemId</b></td></tr>
+<tr class="separator:ad89819ffa3a0b99f964d1c4c8be59e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef778f35048e3886e9f58e702befb8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaef778f35048e3886e9f58e702befb8f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Quantity</b></td></tr>
+<tr class="separator:aaef778f35048e3886e9f58e702befb8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a608b52d71164fbc1e929cb87eff4ad25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a608b52d71164fbc1e929cb87eff4ad25"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>InventoryIndex</b></td></tr>
 <tr class="separator:a608b52d71164fbc1e929cb87eff4ad25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe49d8ae8f6f640608f06e7b67139540"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe49d8ae8f6f640608f06e7b67139540"></a>
-<a class="el" href="class_inventory_info.html">InventoryInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Inventory</b></td></tr>
-<tr class="separator:abe49d8ae8f6f640608f06e7b67139540"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_class_stacked_item"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_stacked_item')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_stacked_item.html">StackedItem</a></td></tr>
-<tr class="memitem:aad54789364d5d03adc613c98715e59d9 inherit pub_attribs_class_stacked_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad54789364d5d03adc613c98715e59d9"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>FarmItemId</b></td></tr>
-<tr class="separator:aad54789364d5d03adc613c98715e59d9 inherit pub_attribs_class_stacked_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a8992477f4586561d3c23179cef0fce inherit pub_attribs_class_stacked_item"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a8992477f4586561d3c23179cef0fce"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>Quantity</b></td></tr>
-<tr class="separator:a1a8992477f4586561d3c23179cef0fce inherit pub_attribs_class_stacked_item"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header properties_class_cloneable_object"><td colspan="2" onclick="javascript:toggleInherit('properties_class_cloneable_object')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_cloneable_object.html">CloneableObject</a></td></tr>
+<tr class="memitem:a9d1329edf2e178e70b35b41955a34103 inherit properties_class_cloneable_object"><td class="memItemLeft" align="right" valign="top">System.Guid&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cloneable_object.html#a9d1329edf2e178e70b35b41955a34103">InstanceId</a><code> [get]</code></td></tr>
+<tr class="memdesc:a9d1329edf2e178e70b35b41955a34103 inherit properties_class_cloneable_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">For managing multiple instances of the same object in a database-like fashion without using object references.  <a href="#a9d1329edf2e178e70b35b41955a34103">More...</a><br /></td></tr>
+<tr class="separator:a9d1329edf2e178e70b35b41955a34103 inherit properties_class_cloneable_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/Raider/Documents/Sparks2/Assets/Scripts/Data/PlayerData.cs</li>
@@ -125,7 +148,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>Quantity</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 15:18:31 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2014 00:18:50 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

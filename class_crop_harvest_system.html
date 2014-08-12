@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -102,13 +102,13 @@ Inheritance diagram for CropHarvestSystem:</div>
  <div class="center">
   <img src="class_crop_harvest_system.png" usemap="#CropHarvestSystem_map" alt=""/>
   <map id="CropHarvestSystem_map" name="CropHarvestSystem_map">
-<area href="interface_i_action_interpreter.html" alt="IActionInterpreter" shape="rect" coords="134,0,258,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_crop_harvest_system_1_1_crop_harvest_state.html">CropHarvestState</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stored in the <a class="el" href="class_grid_object.html">GridObject</a>'s State field. Describes everything you need to know about the <a class="el" href="class_grid_object.html">GridObject</a>'s harvest situation.  <a href="class_crop_harvest_system_1_1_crop_harvest_state.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -125,20 +125,29 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad2a28d08fb5ac9e185cb11876b129864"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad2a28d08fb5ac9e185cb11876b129864"></a>
 UserAction&#160;</td><td class="memItemRight" valign="bottom"><b>InterpretActionFor</b> (<a class="el" href="class_grid_object.html">GridObject</a> obj)</td></tr>
 <tr class="separator:ad2a28d08fb5ac9e185cb11876b129864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27e19e1da2bce4659c11e1e21bb1ddff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27e19e1da2bce4659c11e1e21bb1ddff"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PauseCropGrowth</b> (<a class="el" href="class_grid_object.html">GridObject</a> obj)</td></tr>
+<tr class="separator:a27e19e1da2bce4659c11e1e21bb1ddff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02a8955c88c74ec49d087672029ff92a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02a8955c88c74ec49d087672029ff92a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ResumeCropGrowth</b> (<a class="el" href="class_grid_object.html">GridObject</a> obj)</td></tr>
+<tr class="separator:a02a8955c88c74ec49d087672029ff92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0051385855f1e5ae90aec1d64dc78bb9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0051385855f1e5ae90aec1d64dc78bb9"></a>
 <a class="el" href="class_crop_harvest_system_1_1_crop_harvest_state.html">CropHarvestState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetHarvestStateFor</b> (<a class="el" href="class_grid_object.html">GridObject</a> obj)</td></tr>
 <tr class="separator:a0051385855f1e5ae90aec1d64dc78bb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5851c682341d9cc699e60533f911a8a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5851c682341d9cc699e60533f911a8a0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateHarvestableObject</b> (<a class="el" href="class_grid_object.html">GridObject</a> obj)</td></tr>
+<tr class="separator:a5851c682341d9cc699e60533f911a8a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a469802abd7f08f2dc0437e97e0a1bfbd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a469802abd7f08f2dc0437e97e0a1bfbd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterHarvestableObject</b> (<a class="el" href="interface_i_registrar.html">IRegistrar</a> registrar)</td></tr>
 <tr class="separator:a469802abd7f08f2dc0437e97e0a1bfbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a783108fe945f3e07c31446d9ed824b17"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a783108fe945f3e07c31446d9ed824b17"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterHarvestableObject</b> (<a class="el" href="interface_i_registrar.html">IRegistrar</a> registrar)</td></tr>
 <tr class="separator:a783108fe945f3e07c31446d9ed824b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b557267d94f5269ec2ab480b9e9af4d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b557267d94f5269ec2ab480b9e9af4d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanBeHarvested</b> (<a class="el" href="class_grid_object.html">GridObject</a> obj)</td></tr>
+<tr class="memitem:a2b557267d94f5269ec2ab480b9e9af4d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_crop_harvest_system.html#a2b557267d94f5269ec2ab480b9e9af4d">CanBeHarvested</a> (<a class="el" href="class_grid_object.html">GridObject</a> obj)</td></tr>
+<tr class="memdesc:a2b557267d94f5269ec2ab480b9e9af4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a <a class="el" href="class_grid_object.html">GridObject</a> is crop harvestable AND if it is in a state where it can be harvested.  <a href="#a2b557267d94f5269ec2ab480b9e9af4d">More...</a><br /></td></tr>
 <tr class="separator:a2b557267d94f5269ec2ab480b9e9af4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5e4c926d5840b52cbf367568ab6b2bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5e4c926d5840b52cbf367568ab6b2bf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Harvest</b> (<a class="el" href="class_grid_object.html">GridObject</a> obj)</td></tr>
+<tr class="memitem:ac5e4c926d5840b52cbf367568ab6b2bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_crop_harvest_system.html#ac5e4c926d5840b52cbf367568ab6b2bf">Harvest</a> (<a class="el" href="class_grid_object.html">GridObject</a> obj)</td></tr>
+<tr class="memdesc:ac5e4c926d5840b52cbf367568ab6b2bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to harvest a <a class="el" href="class_grid_object.html">GridObject</a>.  <a href="#ac5e4c926d5840b52cbf367568ab6b2bf">More...</a><br /></td></tr>
 <tr class="separator:ac5e4c926d5840b52cbf367568ab6b2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
@@ -147,13 +156,56 @@ Properties</h2></td></tr>
 static <a class="el" href="class_crop_harvest_system.html">CropHarvestSystem</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Get</b><code> [get]</code></td></tr>
 <tr class="separator:a3e2c2b329decf7126915577f00530d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a2b557267d94f5269ec2ab480b9e9af4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CropHarvestSystem.CanBeHarvested </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_grid_object.html">GridObject</a>&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a <a class="el" href="class_grid_object.html">GridObject</a> is crop harvestable AND if it is in a state where it can be harvested. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac5e4c926d5840b52cbf367568ab6b2bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CropHarvestSystem.Harvest </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_grid_object.html">GridObject</a>&#160;</td>
+          <td class="paramname"><em>obj</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attempts to harvest a <a class="el" href="class_grid_object.html">GridObject</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">obj</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/Raider/Documents/Sparks2/Assets/Scripts/Systems/CropHarvestSystem.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 15:18:30 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2014 00:18:50 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

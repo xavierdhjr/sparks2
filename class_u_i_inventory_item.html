@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,6 +105,15 @@ Inheritance diagram for UIInventoryItem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a0a13db371b58b821201e306dcd088a5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a13db371b58b821201e306dcd088a5d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupHitboxes</b> ()</td></tr>
+<tr class="separator:a0a13db371b58b821201e306dcd088a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86f7753c09988a45879eb74e027147c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86f7753c09988a45879eb74e027147c0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EnableHitboxes</b> ()</td></tr>
+<tr class="separator:a86f7753c09988a45879eb74e027147c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b06fc560eb8c7ab63fb15e4adeed947"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b06fc560eb8c7ab63fb15e4adeed947"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PlaceItem</b> ()</td></tr>
+<tr class="separator:a8b06fc560eb8c7ab63fb15e4adeed947"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab6b7223e1ab2aea21d2cb3078eebd4a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab6b7223e1ab2aea21d2cb3078eebd4a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetItem</b> (<a class="el" href="class_inventory_item.html">InventoryItem</a> item)</td></tr>
 <tr class="separator:aab6b7223e1ab2aea21d2cb3078eebd4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,12 +129,12 @@ UILabel&#160;</td><td class="memItemRight" valign="bottom"><b>QuantityLabel</b><
 <tr class="memitem:ac413bbbf32b559059162e6206380ff7e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac413bbbf32b559059162e6206380ff7e"></a>
 UISprite&#160;</td><td class="memItemRight" valign="bottom"><b>Icon</b></td></tr>
 <tr class="separator:ac413bbbf32b559059162e6206380ff7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84c9da5ecf848d254cf5a4e3be008ba1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84c9da5ecf848d254cf5a4e3be008ba1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>Index</b></td></tr>
-<tr class="separator:a84c9da5ecf848d254cf5a4e3be008ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf7f278c053a11091b7d1454d2f93228"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf7f278c053a11091b7d1454d2f93228"></a>
 <a class="el" href="class_inventory_u_i.html">InventoryUI</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Inventory</b></td></tr>
 <tr class="separator:adf7f278c053a11091b7d1454d2f93228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84c9da5ecf848d254cf5a4e3be008ba1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84c9da5ecf848d254cf5a4e3be008ba1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>Index</b></td></tr>
+<tr class="separator:a84c9da5ecf848d254cf5a4e3be008ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/Raider/Documents/Sparks2/Assets/Scripts/UI/Special UI Modules/UIInventoryItem.cs</li>
@@ -133,7 +142,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>Index</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 15:18:32 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2014 00:18:51 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

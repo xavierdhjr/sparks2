@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,42 +96,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">GameData Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Stores all information about the game. It should be noted that this solution is not appropriate for large sets of data.  
+ <a href="class_game_data.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a159afbd918defc21094b13fad760578a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a159afbd918defc21094b13fad760578a"></a>
-<a class="el" href="class_farm_item_info.html">FarmItemInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetItemInfo</b> (string farmItemId)</td></tr>
-<tr class="separator:a159afbd918defc21094b13fad760578a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea5790745fb78a2a9b54811c1f98284e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea5790745fb78a2a9b54811c1f98284e"></a>
-<a class="el" href="class_grid_object_info.html">GridObjectInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetObjectInfo</b> (string farmItemId)</td></tr>
-<tr class="separator:aea5790745fb78a2a9b54811c1f98284e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4da2f89dd673ea47d5c063480725684c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4da2f89dd673ea47d5c063480725684c"></a>
-<a class="el" href="class_unlockable_info.html">UnlockableInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetUnlockable</b> (string lockId)</td></tr>
-<tr class="separator:a4da2f89dd673ea47d5c063480725684c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1846d1bc1658830a2f0040e7cfa24688"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1846d1bc1658830a2f0040e7cfa24688"></a>
-<a class="el" href="class_crop_harvest_info.html">CropHarvestInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetCropHarvestInfo</b> (string farmItemId)</td></tr>
-<tr class="separator:a1846d1bc1658830a2f0040e7cfa24688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad63307d22b18146095b84c9d87021805"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad63307d22b18146095b84c9d87021805"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GameData</b> (bool good)</td></tr>
+<tr class="separator:ad63307d22b18146095b84c9d87021805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4902886f28e8a6a0ce0e6aa0223798f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4902886f28e8a6a0ce0e6aa0223798f"></a>
 <a class="el" href="class_resource_info.html">ResourceInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetResourceInfo</b> (string resourceId)</td></tr>
 <tr class="separator:ae4902886f28e8a6a0ce0e6aa0223798f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af33a84f630f557498dc8e16a458657b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af33a84f630f557498dc8e16a458657b2"></a>
-<a class="el" href="class_buildable_area_info.html">BuildableAreaInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetAreaInfo</b> (string areaId)</td></tr>
-<tr class="separator:af33a84f630f557498dc8e16a458657b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a472ff1dd361a5653aac6ea4d22bca374"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a472ff1dd361a5653aac6ea4d22bca374"></a>
-static <a class="el" href="class_game_data.html">GameData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ReadSQLiteGameData</b> ()</td></tr>
-<tr class="separator:a472ff1dd361a5653aac6ea4d22bca374"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a896fc10df9616d685dadd97102849ede"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a896fc10df9616d685dadd97102849ede"></a>
 static <a class="el" href="class_game_data.html">GameData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ReadGameData</b> (DataSourceType sourceType)</td></tr>
 <tr class="separator:a896fc10df9616d685dadd97102849ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c2391ac3e32e07b8fdb3ecabc84b30b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c2391ac3e32e07b8fdb3ecabc84b30b"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>ReloadGameData</b> (DataSourceType sourceType)</td></tr>
 <tr class="separator:a5c2391ac3e32e07b8fdb3ecabc84b30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3434397b10ef7f31c921ff8299d58628"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3434397b10ef7f31c921ff8299d58628"></a>
+static <a class="el" href="class_game_data.html">GameData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LoadGameDataFrom</b> (<a class="el" href="class_data_reader.html">DataReader</a> reader)</td></tr>
+<tr class="separator:a3434397b10ef7f31c921ff8299d58628"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a9a99832cb5e92f76c4d57b037e71b934"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a99832cb5e92f76c4d57b037e71b934"></a>
+const string&#160;</td><td class="memItemRight" valign="bottom"><b>RESOURCE_CURRENCY</b> = &quot;currency&quot;</td></tr>
+<tr class="separator:a9a99832cb5e92f76c4d57b037e71b934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaebaca62ba48567ae6748896a51f1389"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaebaca62ba48567ae6748896a51f1389"></a>
+const string&#160;</td><td class="memItemRight" valign="bottom"><b>RESOURCE_ENERGY</b> = &quot;energy&quot;</td></tr>
+<tr class="separator:aaebaca62ba48567ae6748896a51f1389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c3a92dea34fdbe3118fcdc8311c1c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26c3a92dea34fdbe3118fcdc8311c1c5"></a>
+const string&#160;</td><td class="memItemRight" valign="bottom"><b>RESOURCE_SPARKS</b> = &quot;eternal_sparks&quot;</td></tr>
+<tr class="separator:a26c3a92dea34fdbe3118fcdc8311c1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6fc11a69bd4eb3406243e97a4b9ab65"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6fc11a69bd4eb3406243e97a4b9ab65"></a>
 const string&#160;</td><td class="memItemRight" valign="bottom"><b>RELATIVE_PATH_TO_XMLDATA</b> = &quot;gamedata.xml&quot;</td></tr>
 <tr class="separator:ae6fc11a69bd4eb3406243e97a4b9ab65"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,9 +162,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>MaxPlayerLevel</b></td
 <tr class="memitem:a7424ef963477389f9661046073f46cc6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7424ef963477389f9661046073f46cc6"></a>
 <a class="el" href="class_unlockable_info.html">UnlockableInfo</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>Unlockables</b></td></tr>
 <tr class="separator:a7424ef963477389f9661046073f46cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06d374e2413cd6d74d5ff00a6f07dabd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06d374e2413cd6d74d5ff00a6f07dabd"></a>
-<a class="el" href="class_crop_harvest_info.html">CropHarvestInfo</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>CropHarvestData</b> = new <a class="el" href="class_crop_harvest_info.html">CropHarvestInfo</a>[] { }</td></tr>
-<tr class="separator:a06d374e2413cd6d74d5ff00a6f07dabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4c1c0c98ffdb5a01588b3dd207e4428"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4c1c0c98ffdb5a01588b3dd207e4428"></a>
 <a class="el" href="class_farm_item_info.html">FarmItemInfo</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>FarmItemData</b> = new <a class="el" href="class_farm_item_info.html">FarmItemInfo</a>[] { }</td></tr>
 <tr class="separator:ad4c1c0c98ffdb5a01588b3dd207e4428"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,31 +169,71 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>MaxPlayerLevel</b></td
 <a class="el" href="class_grid_object_info.html">GridObjectInfo</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>GridObjectData</b> = new <a class="el" href="class_grid_object_info.html">GridObjectInfo</a>[] { }</td></tr>
 <tr class="separator:af02f966a475ec455c420f2a5d98fe3f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12102c8363a04dee3b78b627d351cca5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12102c8363a04dee3b78b627d351cca5"></a>
-<a class="el" href="class_buildable_area_info.html">BuildableAreaInfo</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>AreaData</b></td></tr>
+<a class="el" href="class_buildable_area_info.html">BuildableAreaInfo</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>AreaData</b> = new <a class="el" href="class_buildable_area_info.html">BuildableAreaInfo</a>[] { }</td></tr>
 <tr class="separator:a12102c8363a04dee3b78b627d351cca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a881ecdefad68403cd152a00f26cd34f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a881ecdefad68403cd152a00f26cd34f4"></a>
-<a class="el" href="class_store_data.html">StoreData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Store</b></td></tr>
+<a class="el" href="class_store_data.html">StoreData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Store</b> = new <a class="el" href="class_store_data.html">StoreData</a>()</td></tr>
 <tr class="separator:a881ecdefad68403cd152a00f26cd34f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca32c4292b0a424ab6b558f81b50ff2b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca32c4292b0a424ab6b558f81b50ff2b"></a>
+<a class="el" href="class_crop_data.html">CropData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CropInfo</b> = new <a class="el" href="class_crop_data.html">CropData</a>()</td></tr>
+<tr class="separator:aca32c4292b0a424ab6b558f81b50ff2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a210257e35942c170e69309cf36bb8b29"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a210257e35942c170e69309cf36bb8b29"></a>
-<a class="el" href="class_language.html">Language</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LanguageSettings</b></td></tr>
+<a class="el" href="class_language.html">Language</a>&#160;</td><td class="memItemRight" valign="bottom"><b>LanguageSettings</b> = new <a class="el" href="class_language.html">Language</a>()</td></tr>
 <tr class="separator:a210257e35942c170e69309cf36bb8b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7911c4eadacc300191c2a2f87f688a63"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7911c4eadacc300191c2a2f87f688a63"></a>
-<a class="el" href="class_resource_info.html">ResourceInfo</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>GameResources</b></td></tr>
+<a class="el" href="class_resource_info.html">ResourceInfo</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>GameResources</b> = new <a class="el" href="class_resource_info.html">ResourceInfo</a>[] { }</td></tr>
 <tr class="separator:a7911c4eadacc300191c2a2f87f688a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d6f45e838fb6485c0621b7e80ccbf86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d6f45e838fb6485c0621b7e80ccbf86"></a>
+<a class="el" href="class_crafting_data.html">CraftingData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Crafting</b> = new <a class="el" href="class_crafting_data.html">CraftingData</a>()</td></tr>
+<tr class="separator:a3d6f45e838fb6485c0621b7e80ccbf86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a026463bc6037b57e80252ef28d8ba774"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a026463bc6037b57e80252ef28d8ba774"></a>
 static <a class="el" href="class_game_data.html">GameData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Get</b><code> [get]</code></td></tr>
 <tr class="separator:a026463bc6037b57e80252ef28d8ba774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f3b2cff9397e9b2c1cc424d72bc453"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20f3b2cff9397e9b2c1cc424d72bc453"></a>
+static <a class="el" href="class_farm_item_info.html">FarmItemInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BAD_ITEM</b><code> [get]</code></td></tr>
+<tr class="separator:a20f3b2cff9397e9b2c1cc424d72bc453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b777c145fdca16de38caeaf53e56ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_data.html#a01b777c145fdca16de38caeaf53e56ed">Good</a><code> [get]</code></td></tr>
+<tr class="memdesc:a01b777c145fdca16de38caeaf53e56ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this data any good? Get's set in constructor  <a href="#a01b777c145fdca16de38caeaf53e56ed">More...</a><br /></td></tr>
+<tr class="separator:a01b777c145fdca16de38caeaf53e56ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c3f3fe78becc4448c4228a0ead5ebd5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c3f3fe78becc4448c4228a0ead5ebd5"></a>
+<a class="el" href="class_hebrew_calendar.html">HebrewCalendar</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Calendar</b><code> [get, set]</code></td></tr>
+<tr class="separator:a6c3f3fe78becc4448c4228a0ead5ebd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Stores all information about the game. It should be noted that this solution is not appropriate for large sets of data. </p>
+</div><h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="a01b777c145fdca16de38caeaf53e56ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool GameData.Good</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is this data any good? Get's set in constructor </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/Raider/Documents/Sparks2/Assets/Scripts/Data/GameData.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 15:18:31 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2014 00:18:50 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,6 +105,9 @@ Inheritance diagram for UIStoreItem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a850e2a88c8722d426a68c1259f00d578"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a850e2a88c8722d426a68c1259f00d578"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Setup</b> ()</td></tr>
+<tr class="separator:a850e2a88c8722d426a68c1259f00d578"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c71a380e6fdd0ec202111b13a4d0071"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c71a380e6fdd0ec202111b13a4d0071"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPurchasable</b> (<a class="el" href="class_store_purchasable_info.html">StorePurchasableInfo</a> info)</td></tr>
 <tr class="separator:a6c71a380e6fdd0ec202111b13a4d0071"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,18 +120,21 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a9c06f363704c2d3cdf8f282e3dc4413e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c06f363704c2d3cdf8f282e3dc4413e"></a>
 UILabel&#160;</td><td class="memItemRight" valign="bottom"><b>ItemNameLabel</b></td></tr>
 <tr class="separator:a9c06f363704c2d3cdf8f282e3dc4413e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae36c2e7c34166cb057e190f3c6661c2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae36c2e7c34166cb057e190f3c6661c2f"></a>
-UILabel&#160;</td><td class="memItemRight" valign="bottom"><b>CostLabel</b></td></tr>
-<tr class="separator:ae36c2e7c34166cb057e190f3c6661c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb2474edf8cd2251a784059a0777635d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb2474edf8cd2251a784059a0777635d"></a>
-UISprite&#160;</td><td class="memItemRight" valign="bottom"><b>Icon</b></td></tr>
-<tr class="separator:afb2474edf8cd2251a784059a0777635d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb41b1e7ffa724f8456b4809c4a52b10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb41b1e7ffa724f8456b4809c4a52b10"></a>
+UISprite&#160;</td><td class="memItemRight" valign="bottom"><b>ItemIcon</b></td></tr>
+<tr class="separator:abb41b1e7ffa724f8456b4809c4a52b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93cd6055f7a0b50060239ad82f501ad8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93cd6055f7a0b50060239ad82f501ad8"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>Index</b></td></tr>
 <tr class="separator:a93cd6055f7a0b50060239ad82f501ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a699be819fc4b22e3ff36bce40d66b9f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a699be819fc4b22e3ff36bce40d66b9f0"></a>
 <a class="el" href="class_store_game_u_i.html">StoreGameUI</a>&#160;</td><td class="memItemRight" valign="bottom"><b>StoreUI</b></td></tr>
 <tr class="separator:a699be819fc4b22e3ff36bce40d66b9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d1f834b7fc031b5d77c8cbbf6af6ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56d1f834b7fc031b5d77c8cbbf6af6ee"></a>
+<a class="el" href="class_u_i_cost_label.html">UICostLabel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ShekelCostLabel</b></td></tr>
+<tr class="separator:a56d1f834b7fc031b5d77c8cbbf6af6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a139bd9a1fa8b0508b89bc6fb1252d2bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a139bd9a1fa8b0508b89bc6fb1252d2bc"></a>
+<a class="el" href="class_u_i_cost_label.html">UICostLabel</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SparksCostLabel</b></td></tr>
+<tr class="separator:a139bd9a1fa8b0508b89bc6fb1252d2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/Raider/Documents/Sparks2/Assets/Scripts/UI/Special UI Modules/UIStoreItem.cs</li>
@@ -136,7 +142,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>Index</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 15:18:32 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2014 00:18:51 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

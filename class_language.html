@@ -75,7 +75,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -94,20 +94,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Language Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Stores strings that map to certain concepts in the game. The goal is to be able to easily change what something is called without touching code.  
+ <a href="class_language.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a4fe602946bbbce437db08bb0415dd932"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fe602946bbbce437db08bb0415dd932"></a>
-static string&#160;</td><td class="memItemRight" valign="bottom"><b>GetResourceSingular</b> (<a class="el" href="class_resource_info.html">ResourceInfo</a> info)</td></tr>
+<tr class="memitem:a4fe602946bbbce437db08bb0415dd932"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_language.html#a4fe602946bbbce437db08bb0415dd932">GetResourceSingular</a> (<a class="el" href="class_resource_info.html">ResourceInfo</a> info)</td></tr>
+<tr class="memdesc:a4fe602946bbbce437db08bb0415dd932"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper. Returns singular version of a resource. E.g. 'Shekel'  <a href="#a4fe602946bbbce437db08bb0415dd932">More...</a><br /></td></tr>
 <tr class="separator:a4fe602946bbbce437db08bb0415dd932"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a997d576b03fb9fb567fd0261317f9335"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a997d576b03fb9fb567fd0261317f9335"></a>
-static string&#160;</td><td class="memItemRight" valign="bottom"><b>GetResourcePlural</b> (<a class="el" href="class_resource_info.html">ResourceInfo</a> info)</td></tr>
+<tr class="memitem:a997d576b03fb9fb567fd0261317f9335"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_language.html#a997d576b03fb9fb567fd0261317f9335">GetResourcePlural</a> (<a class="el" href="class_resource_info.html">ResourceInfo</a> info)</td></tr>
+<tr class="memdesc:a997d576b03fb9fb567fd0261317f9335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper. Returns plural version of a resource. E.g. 'Shekels'  <a href="#a997d576b03fb9fb567fd0261317f9335">More...</a><br /></td></tr>
 <tr class="separator:a997d576b03fb9fb567fd0261317f9335"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47b2967ca51f94675eca56310f18ae57"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47b2967ca51f94675eca56310f18ae57"></a>
-static string&#160;</td><td class="memItemRight" valign="bottom"><b>GetSingular</b> (string id)</td></tr>
+<tr class="memitem:a47b2967ca51f94675eca56310f18ae57"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_language.html#a47b2967ca51f94675eca56310f18ae57">GetSingular</a> (string id)</td></tr>
+<tr class="memdesc:a47b2967ca51f94675eca56310f18ae57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper. Returns singular version of a string.  <a href="#a47b2967ca51f94675eca56310f18ae57">More...</a><br /></td></tr>
 <tr class="separator:a47b2967ca51f94675eca56310f18ae57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d472da043d1cdad107b50d8b7b635fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d472da043d1cdad107b50d8b7b635fd"></a>
-static string&#160;</td><td class="memItemRight" valign="bottom"><b>GetPlural</b> (string id)</td></tr>
+<tr class="memitem:a7d472da043d1cdad107b50d8b7b635fd"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_language.html#a7d472da043d1cdad107b50d8b7b635fd">GetPlural</a> (string id)</td></tr>
+<tr class="memdesc:a7d472da043d1cdad107b50d8b7b635fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper. Returns plural version of a string.  <a href="#a7d472da043d1cdad107b50d8b7b635fd">More...</a><br /></td></tr>
 <tr class="separator:a7d472da043d1cdad107b50d8b7b635fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -128,13 +131,120 @@ const string&#160;</td><td class="memItemRight" valign="bottom"><b>ETERNAL_SPARK
 const string&#160;</td><td class="memItemRight" valign="bottom"><b>LEVEL</b> = &quot;level&quot;</td></tr>
 <tr class="separator:ac2cb9d2ee91b0c7f2e008ab92d3971c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Stores strings that map to certain concepts in the game. The goal is to be able to easily change what something is called without touching code. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a7d472da043d1cdad107b50d8b7b635fd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string Language.GetPlural </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper. Returns plural version of a string. </p>
+
+</div>
+</div>
+<a class="anchor" id="a997d576b03fb9fb567fd0261317f9335"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string Language.GetResourcePlural </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_resource_info.html">ResourceInfo</a>&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper. Returns plural version of a resource. E.g. 'Shekels' </p>
+
+</div>
+</div>
+<a class="anchor" id="a4fe602946bbbce437db08bb0415dd932"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string Language.GetResourceSingular </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_resource_info.html">ResourceInfo</a>&#160;</td>
+          <td class="paramname"><em>info</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper. Returns singular version of a resource. E.g. 'Shekel' </p>
+
+</div>
+</div>
+<a class="anchor" id="a47b2967ca51f94675eca56310f18ae57"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string Language.GetSingular </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper. Returns singular version of a string. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Raider/Documents/Sparks2/Assets/Scripts/Data/GameData.cs</li>
+<li>C:/Users/Raider/Documents/Sparks2/Assets/Scripts/Data/Models/Language.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 12 2014 15:18:31 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 12 2014 00:18:50 for Sparks of Eternity 2 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
