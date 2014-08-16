@@ -4,6 +4,7 @@
 	\tableofcontents
 	
 	\section important Systems 
+	- [Calendar](@ref calendar)
 	- Camera Movement
 	- [Crop Harvesting](@ref crop_harvesting)
 	- [Grid Highlighting](@ref grid_highlighting)
