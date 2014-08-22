@@ -84,21 +84,21 @@
 	1. CalendarSystem: the system itself.
 	2. HebrewCalendar: the abstraction of the current date and time and the events on the calendar.
 	3. HebrewDateTime: the abstraction of a moment in time. Has a date component and time component.
-	4. HebrewDateTime.HebrewTime: the abstraction of a time within a day.
-	5. HebrewDateTime.HebrewDate: the abstraction of a day within a month and year. Contains
+	4. HebrewTime: the abstraction of a time within a day.
+	5. HebrewDate: the abstraction of a day within a month and year. Contains
 	a lot of the specific rules that define the Hebrew calendar.
 	
 	\subsection calendar_imp_interfaces Interfaces
 	
-	ICalendarListener: allows listening to the CalendarSystem for when the current date-time is
-	updated. A good example of its use is by CalendarUI so it doesn't have to check on its own
-	Update or FixedUpdate to know when to update the UI elements under its control. Use ListenForTimeUpdate
-	and StopListeningForTimeUpdate in the CalendarSystem class to start or stop listening.
+	ICalendarListener: allows listening to the CalendarSystem various events occur with the calendar.
+	A good example of its use is by CalendarUI so it doesn't have to check on its own
+	Update or FixedUpdate to know when to update the UI elements under its control. Use ListenForCalendarEvents
+	and StopListeningForTimeEvents in the CalendarSystem class to start or stop listening.
 	
 	\subsection calendar_imp_delegates Delegates
 	
-	HebrewCalendar.OnDaysCompleteEventHandler: used by HebrewDateTime.HebrewDate objects to receive
-	notice of when a HebrewDateTime.HebrewTime ticks over to the next day(s).
+	HebrewCalendar.OnDaysCompleteEventHandler: used by HebrewDate objects to receive
+	notice of when a HebrewTime ticks over to the next day(s).
 	
 	\section calendar_how_to How To Use
 	
@@ -107,11 +107,11 @@
 	It is often useful to "walk" the calendar to determine various things about it.
 	The HebrewDateTime class is the encapsulation of the calendar rules
 	for dates and times (where as HebrewCalendar is the encapsulation of the current
-	date-time). HebrewDateTime, HebrewDateTime.HebrewDate, and HebrewDateTime.HebrewTime objects
+	date-time). HebrewDateTime, HebrewDate, and HebrewTime objects
 	will be the three types of objects used to walk the calendar.
 	
 	Let's say you wanted to know when the 3rd Monday of the month occurs. First, start
-	with a HebrewDateTime.HebrewDate object that begins at the 1st of the desired month in the correct
+	with a HebrewDate object that begins at the 1st of the desired month in the correct
 	year. We don't need a HebrewDateTime object, since the time portion isn't important to us in
 	this example.
 	
@@ -183,4 +183,23 @@
 	Note: one event cannot overlap itself. In other words, a weekly event cannot
 	span more than 7 days. The current implementation cannot handle this scenario
 	as it cannot detect multiple instances of the same event going on simulatneously.
+	
+	\subsection calendar_events_effects Daily Effects
+	
+	Each event can have zero or more daily effects associated with it. Currently there
+	are only a handful of options, but they can be expanded as necessary in the EventEffectInfo class:
+	
+	EffectType - affected resource:
+	1. Energy
+	2. Eternal Sparks
+	3. Shekels
+	
+	ValueType - value format:
+	1. Number: changes the affected resource rate by a constant number.
+	2. Percentage: changes the affected resource rate by a percentage (0.1 --> 10% boost).
+	
+	The EffectType is useful for determining whether the event applies to a particular resource.
+	
+	To determine what the value of a particular resource rate will be after a particular effect
+	takes place, it is possible to pass the float into the GetEffectEndResult function.
 */
