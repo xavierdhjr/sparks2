@@ -1,0 +1,207 @@
+/*!
+	\page calendar System: Calendar
+	
+	\well{
+	See CalendarSystem for more details on methods and public fields.
+	}
+	
+	\tableofcontents
+	
+	\section calendar_summary Summary
+	
+	This system manages the date, time, and events of the Hebrew calendar.
+
+	\section calendar_goals Goals
+	
+	- Manage the current date and time accurately.
+	- Manage and allow for the creation of events to impact other areas of gameplay.
+	
+	\section calendar_background Background
+	
+	\subsection calendar_background_sources Sources
+	
+	####[General information](http://en.wikipedia.org/wiki/Hebrew_calendar)####
+		- Contains a lot of good information about how the Hebrew calendar is structured,
+		the significance of some of its features, and some description of some calculations.
+	
+	####[Calculation specific](http://hebrewcalendar.tripod.com/)####
+		- A good source for learning how to perform certain computations to achieve
+		an accurate representation of the Hebrew calendar.
+  
+  ####[Rosh Hashanah postponement](http://individual.utoronto.ca/kalendis/hebrew/postpone.htm)####
+		- Although other sources listed include explanation of the four Rosh Hashanah
+		postponement rules, this source does a particularly good job.
+	
+	\subsection calendar_background_jewish_day The Jewish Day
+	
+	The Jewish day is 24 hours long, each hour lasting 1080 parts. A part is roughly 3.33 seconds.
+	Note: the Jewish day actually begins at sunset, so noon is at the 18 hour mark, not the 12 hour mark.
+	
+	\subsection calendar_background_beginning_year Beginning of the Year
+	
+	The current implementation starts the calendar at the 1st of Tishrei, year 1 which is the
+	civic new year. The other possibility is the ecclesiastical new year, which begins at
+	the 1st of Nissan.
+	
+	The civic new year was chosen because the year actually changes	when the 1st of Tishrei
+	is reached, and the desired start time is the beginning of the calendar in year 1.
+	
+	\subsection calendar_background_leap_year Leap Years
+	
+	A leap year in the Hebrew Calendar adds an additional month. The month of Adar in a common year
+	(non-leap year) is instead Adar Bet (second Adar) because Adar Aleph (first Adar) is inserted
+	before it and is actually the additional month. Adar Aleph is 30 days long, while Adar Bet remains 29 days.
+	
+	\subsection calendar_background_rosh_hashanah Rosh Hashanah Postponement
+	
+	The number of days between Rosh Hashanah (new year) of two consecutive years varies based on four
+	rules. These four rules and the inclusion of leap years mean there are six possible
+	lengths for a year: 353, 354, 355, 383, 384, and 385.
+	
+	####[The Four Rules](http://individual.utoronto.ca/kalendis/hebrew/postpone.htm)####
+	1. [Molad Zakein](http://individual.utoronto.ca/kalendis/hebrew/postpone.htm#zakein):
+	"If the molad of Tishrei falls on or after noon then postpone Rosh HaShanah to the next day."
+	2. [Lo ADU Rosh](http://individual.utoronto.ca/kalendis/hebrew/postpone.htm#swf):
+	"If the molad of Tishrei falls on Sunday, Wednesday or Friday then postpone Rosh HaShanah to the next day."
+	3. [GaTaRaD](http://individual.utoronto.ca/kalendis/hebrew/postpone.htm#rule3):
+	"If the molad of Tishrei for a non-leap year (12 months) falls on Tuesday on or after 9 hours
+	and 204 parts then postpone Rosh Hashanah to Thursday."
+		- Note: if this rule is observed, the delay is actually 2 days instead of 1 like the others.
+	4. [BeTUTeKaPoT](http://individual.utoronto.ca/kalendis/hebrew/postpone.htm#rule4):
+	"If the molad of Tishrei after a leap year (13 months) falls on Monday on or after 15 hours
+	and 589 parts then postpone Rosh Hashanah to Tuesday"
+	
+	Note that the required order of checking these rules is from 1 to 4 as shown. Rule 1 can cause
+	rule 2 to become necessary, preventing Rosh Hashanah from being postponed to an
+	invalid day. Also, a time saver is that rule 3 and 4 are not necessary to check if either rule 1 or 2
+	was invoked.
+	
+	\section calendar_imp_constructs Important Constructs
+	
+	\subsection calendar_imp_classes Classes
+	
+	The important classes for the calendar are as follows:
+	1. CalendarSystem: the system itself.
+	2. HebrewCalendar: the abstraction of the current date and time and the events on the calendar.
+	3. HebrewDateTime: the abstraction of a moment in time. Has a date component and time component.
+	4. HebrewTime: the abstraction of a time within a day.
+	5. HebrewDate: the abstraction of a day within a month and year. Contains
+	a lot of the specific rules that define the Hebrew calendar.
+	6. RoshHashanah: has static methods to permit computing Rosh Hashanah postponement
+	and year length.
+	
+	\subsection calendar_imp_interfaces Interfaces
+	
+	ICalendarListener: allows listening to the CalendarSystem various events occur with the calendar.
+	A good example of its use is by CalendarUI so it doesn't have to check on its own
+	Update or FixedUpdate to know when to update the UI elements under its control. Use ListenForCalendarEvents
+	and StopListeningForTimeEvents in the CalendarSystem class to start or stop listening.
+	
+	\subsection calendar_imp_delegates Delegates
+	
+	HebrewCalendar.OnDaysCompleteEventHandler: used by HebrewDate objects to receive
+	notice of when a HebrewTime ticks over to the next day(s).
+	
+	\section calendar_how_to How To Use
+	
+	\subsection calendar_walking "Walking" the Calendar
+	
+	It is often useful to "walk" the calendar to determine various things about it.
+	The HebrewDateTime class is the encapsulation of the calendar rules
+	for dates and times (where as HebrewCalendar is the encapsulation of the current
+	date-time). HebrewDateTime, HebrewDate, and HebrewTime objects
+	will be the three types of objects used to walk the calendar.
+	
+	Let's say you wanted to know when the 3rd Monday of the month occurs. First, start
+	with a HebrewDate object that begins at the 1st of the desired month in the correct
+	year. We don't need a HebrewDateTime object, since the time portion isn't important to us in
+	this example.
+	
+	The easiest way to find the 3rd Monday is to increment the Day property
+	by 1 until the DayOfTheWeek property is 3 and the DayOfTheWeekRepInMonth property is
+	3 (representing the 3rd occurence of this weekday).
+	
+	Other faster methods can be found and are encouraged for performance. For instance,
+	finding the 1st	Monday of the month and then incrementing the Day by 7 * 2 to get
+	the 3rd occurence	is much less CPU intensive work, especially if the computation
+	is done very frequently.
+	
+	A note on walking by month: if the Month property is altered, but the
+	day of the month does not exist, the Day property will be reduced until it is
+	a valid day of the month for the given month. If the month value is invalid
+	for the given year (0 or below, or above the total number of months), then the
+	year will be incremented or decremented as necessary and the month will be corrected.
+	
+	A note about walking by year: if the Year property is altered, the name of the month
+	may not be the same as it was due to the fact that leap years have 13 months and the
+	month is adjusted based on month number, not string.
+	
+	\subsection calendar_setup Setting up the Calendar
+	
+	Setting up the calendar itself is very simple. Just attach the CalendarSystem script to an object
+	in the scene hierarchy and you're all set. The calendar system will automatically create
+	the HebrewCalendar object to track events and the current date and time.
+	
+	As of 8/16/14 the calendar still increments time on its own, but in the future it will
+	synchronize with a server to get the current time. A nice feature to debug with is to
+	use PageUp and PageDown to increment or decrement the number of parts per update. This
+	will obviously need to be removed in the future.
+	
+	Note: the calendar system uses a static data member for the calendar, so only one
+	calendar is supported in the current implementation.
+	
+	\subsection calendar_setup_ui Setting up the Calendar UI
+	
+	In order to see the calendar actually doing anything, use the CalendarUI script.
+	The Month and Day labels show what the current month and day of the month it is.
+	The DayBG sprite is the background for the DaySlider. The DaySlider fills up
+	part of DayBG to a percentage equal to the percentage of the day completed.
+	DayMarker positions its center on the right side of the DaySlider.
+	
+	\section calendar_events Events
+	
+	\subsection calendar_events_background Background
+	
+	Events are a way to track important holidays, festivals, and dates
+	in the Jewish year. They each have their own significance and traditions
+	associated with them.
+	
+	The goal of the calendar is to allow other scripts to ask what events are occuring
+	for any given day and to use the returned information to make use of it or to
+	display it to the user in some way.
+	
+	\subsection calendar_events_repetition Repetition
+	
+	There are several ways to define when an event will repeat:
+	1. None: the event will only occur once.
+	2. Daily: the event will occur every day.
+	3. Weekly: the event will occur every week on the weekdays it spans.
+	4. Montly by day: the event will occur every month starting on the specified day.
+	5. Montly by weekday: the event will occure very month starting on the
+	specified repetition of a weekday (ex: 3rd Monday; 1st Friday; etc.).
+	6. Yearly: will occur every year on the date specified. If the date
+	does not exist it will not be observed in that year.
+	
+	Note: one event cannot overlap itself. In other words, a weekly event cannot
+	span more than 7 days. The current implementation cannot handle this scenario
+	as it cannot detect multiple instances of the same event going on simulatneously.
+	
+	\subsection calendar_events_effects Daily Effects
+	
+	Each event can have zero or more daily effects associated with it. Currently there
+	are only a handful of options, but they can be expanded as necessary in the EventEffectInfo class:
+	
+	EffectType - affected resource:
+	1. Energy
+	2. Eternal Sparks
+	3. Shekels
+	
+	ValueType - value format:
+	1. Number: changes the affected resource rate by a constant number.
+	2. Percentage: changes the affected resource rate by a percentage (0.1 --> 10% boost).
+	
+	The EffectType is useful for determining whether the event applies to a particular resource.
+	
+	To determine what the value of a particular resource rate will be after a particular effect
+	takes place, it is possible to pass the float into the GetEffectEndResult function.
+*/
