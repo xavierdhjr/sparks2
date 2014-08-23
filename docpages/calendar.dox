@@ -87,6 +87,8 @@
 	4. HebrewTime: the abstraction of a time within a day.
 	5. HebrewDate: the abstraction of a day within a month and year. Contains
 	a lot of the specific rules that define the Hebrew calendar.
+	6. RoshHashanah: has static methods to permit computing Rosh Hashanah postponement
+	and year length.
 	
 	\subsection calendar_imp_interfaces Interfaces
 	
